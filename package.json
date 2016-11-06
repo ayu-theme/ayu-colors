@@ -1,0 +1,44 @@
+{
+  "name": "ayu",
+  "version": "0.0.0",
+  "description": "The ayu sublime theme as a color palette",
+  "main": "dist/colors.js",
+  "jsnext:main": "src/colors.js",
+  "module": "src/colors.js",
+  "scripts": {
+    "clear-before": "rimraf ayu src/dark.js src/light.js src/mirage.js",
+    "clear-after": "rimraf ayu",
+    "update": "babel-node scripts/update.js",
+    "test": "jest",
+    "start": "run-s clear-before update clear-after test",
+    "clear-build": "rimraf dist",
+    "build-cjs": "babel src --out-dir dist",
+    "build": "run-s clear-build build-cjs",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "url": "https://github.com/k15a/ayu",
+    "type": "git"
+  },
+  "author": "Konstantin Pschera <me@kons.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-core": "6.18.2",
+    "babel-jest": "16.0.0",
+    "babel-preset-latest": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "cross-env": "3.1.3",
+    "is-object": "1.0.1",
+    "jest": "16.0.2",
+    "js-yaml": "3.6.1",
+    "lodash.camelcase": "4.3.0",
+    "map-obj": "2.0.0",
+    "npm-run-all": "3.1.1",
+    "rimraf": "2.5.4"
+  }
+}
