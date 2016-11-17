@@ -34,14 +34,16 @@ const license = `
  */
 `
 
-const camelCaseKeys = (obj) => mapObject(obj, (key, value) => {
-	return [
-		camelCase(key),
-		isObject(value) ? camelCaseKeys(value) : value
-	]
-})
+const camelCaseKeys = (obj) => mapObject(obj, (key, value) => ([
+	camelCase(key),
+	isObject(value) ? camelCaseKeys(value) : value
+]))
 
-const template = (colors) => `${license}\nexport default ${JSON.stringify(camelCaseKeys(colors), null, '\t')}`
+const template = (colors) => `
+${license}
+
+export default ${JSON.stringify(camelCaseKeys(colors), null, '\t')}
+`
 
 const clone = spawn('git', ['clone', 'https://github.com/dempfi/ayu'])
 

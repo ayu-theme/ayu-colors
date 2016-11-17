@@ -24,6 +24,7 @@
  * SOFTWARE.
  */
 
+
 export default {
 	"theme": "dark",
 	"common": {

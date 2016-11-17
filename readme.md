@@ -20,9 +20,3 @@ mirage.syntax.error === 'FF3333'
 ```
 
 You can find the full colors at [dempfi/ayu/src/themes](https://github.com/dempfi/ayu/blob/master/src/themes).
-
-### Updates
-
-  - Major: A key gets deleted or a new key gets inserted
-  - Minor: A key gets updated in all themes
-  - Patch: A key gets updated in a single theme
