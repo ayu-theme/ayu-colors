@@ -51,13 +51,12 @@ export default {
 		"opacity": "0.3"
 	},
 	"syntax": {
-		"activeGuide": "314559",
 		"error": "FF3333",
-		"gutterFg": "2D3640",
-		"inSelection": "1E2A35",
 		"lineHg": "151A1F",
+		"gutterFg": "2D3640",
 		"selection": "253340",
 		"stackGuide": "1A2633",
+		"activeGuide": "314559",
 		"tag": "36A3D9",
 		"func": "FFB454",
 		"regexp": "95E6CB",

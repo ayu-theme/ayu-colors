@@ -56,7 +56,6 @@ export default {
 		"gutterFg": "D9D8D7",
 		"selection": "F0EEE4",
 		"stackGuide": "DEDDDC",
-		"inSelection": "F2F2EB",
 		"activeGuide": "B3B2B1",
 		"tag": "41A6D9",
 		"func": "F29718",

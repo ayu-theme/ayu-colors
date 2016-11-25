@@ -19,4 +19,4 @@ light.ui.fg === '828C99'
 mirage.syntax.error === 'FF3333'
 ```
 
-You can find the full colors at [dempfi/ayu/src/themes](https://github.com/dempfi/ayu/blob/master/src/themes).
+<img width="100%" src="https://cdn.rawgit.com/ayu-theme/ayu-colors/master/colors.svg">

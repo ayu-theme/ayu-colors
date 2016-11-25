@@ -1276,6 +1276,10 @@ find-up@^1.0.0, find-up@^1.1.2:
     path-exists "^2.0.0"
     pinkie-promise "^2.0.0"
 
+font-color-contrast@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/font-color-contrast/-/font-color-contrast-1.0.3.tgz#77d88ff97c6bd095cfa9dfeb44624ba8ad717b6c"
+
 for-in@^0.1.5:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.6.tgz#c9f96e89bfad18a545af5ec3ed352a1d9e5b4dc8"
