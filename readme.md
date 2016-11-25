@@ -19,4 +19,6 @@ light.ui.fg === '828C99'
 mirage.syntax.error === 'FF3333'
 ```
 
+### Colors
+
 <img width="100%" src="https://cdn.rawgit.com/ayu-theme/ayu-colors/master/colors.svg">
