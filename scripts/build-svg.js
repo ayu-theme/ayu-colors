@@ -48,7 +48,7 @@ for (let key in light) {
 			</g>
 
 			<g>
-				<text y="${index * 3}em" x="12.5%">${key}</text>
+				<text y="${index * 3}em" x="12.5%" fill="#333333">${key}</text>
 				<text y="${index * 3}em" x="37.5%" fill="${fontColorContrast(`#${lightColor}`)}">${lightColor}</text>
 				<text y="${index * 3}em" x="62.5%" fill="${fontColorContrast(`#${mirageColor}`)}">${mirageColor}</text>
 				<text y="${index * 3}em" x="87.5%" fill="${fontColorContrast(`#${darkColor}`)}">${darkColor}</text>
@@ -69,7 +69,7 @@ colorSVG = `<?xml version="1.0" standalone="no" ?>
 		<rect height="${index * 3}em" width="25%" x="75%" fill="#0F1419" />
 	</g>
 	<g font-weight="bold">
-		<text y="3em" x="12.5%">Path</text>
+		<text y="3em" x="12.5%" fill="#333333">Path</text>
 		<text y="3em" x="37.5%" fill="#${colors.light.common.fg}">Light</text>
 		<text y="3em" x="62.5%" fill="#${colors.mirage.common.fg}">Mirage</text>
 		<text y="3em" x="87.5%" fill="#${colors.dark.common.fg}">Dark</text>
