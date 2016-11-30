@@ -26,46 +26,46 @@
 
 
 export default {
-	"theme": "mirage",
+	"theme": "#mirage",
 	"common": {
-		"bg": "212733",
-		"fg": "D9D7CE",
-		"accent": "FFCC66"
+		"bg": "#212733",
+		"fg": "#d9d7ce",
+		"accent": "#ffcc66"
 	},
 	"ui": {
-		"fg": "607080",
+		"fg": "#607080",
 		"panel": {
-			"bg": "272D38",
-			"shadow": "11141A",
-			"pathFg": "607080",
-			"rowBg": "303540"
+			"bg": "#272d38",
+			"shadow": "#11141a",
+			"pathFg": "#607080",
+			"rowBg": "#303540"
 		},
 		"folder": {
-			"normal": "3E4B59"
+			"normal": "#3e4b59"
 		},
 		"scrollbar": {
-			"puck": "FFFFFF"
+			"puck": "#ffffff"
 		},
 		"opacity": "0.3",
-		"gridDivider": "343D4A",
+		"gridDivider": "#343d4a",
 		"minimap": "100, 100, 100"
 	},
 	"syntax": {
-		"error": "FF3333",
-		"gutterFg": "3D4752",
-		"lineHg": "242B38",
-		"selection": "343F4C",
-		"stackGuide": "39434D",
-		"activeGuide": "606F80",
-		"tag": "5CCFE6",
-		"func": "FFD580",
-		"string": "BAE67E",
-		"regexp": "95E6CB",
-		"supVar": "F07178",
-		"keyword": "FFAE57",
-		"esSpec": "FFC44C",
-		"comment": "5C6773",
-		"constant": "D4BFFF",
-		"operator": "80D4FF"
+		"error": "#ff3333",
+		"gutterFg": "#3d4752",
+		"lineHg": "#242b38",
+		"selection": "#343f4c",
+		"stackGuide": "#39434d",
+		"activeGuide": "#606f80",
+		"tag": "#5ccfe6",
+		"func": "#ffd580",
+		"string": "#bae67e",
+		"regexp": "#95e6cb",
+		"supVar": "#f07178",
+		"keyword": "#ffae57",
+		"esSpec": "#ffc44c",
+		"comment": "#5c6773",
+		"constant": "#d4bfff",
+		"operator": "#80d4ff"
 	}
 }

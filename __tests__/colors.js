@@ -3,10 +3,7 @@ import isObject from 'is-object'
 
 import * as colors from '../src/colors.js'
 
-const removeValues = (obj) => mapObject(obj, (key, value) => ([
-	key,
-	isObject(value) ? removeValues(value) : ''
-]))
+const removeValues = (obj) => mapObject(obj, (key, value) => ([key, '']), { deep: true })
 
 test('colors', () => {
 	expect(colors).toMatchSnapshot()

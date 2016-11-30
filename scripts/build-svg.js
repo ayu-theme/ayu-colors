@@ -35,23 +35,23 @@ let colorSVG = ''
 
 let index = 2
 for (let key in light) {
-	if (light.hasOwnProperty(key) && typeof light[key] === 'string' && light[key].length === 6) {
+	if (light.hasOwnProperty(key) && typeof light[key] === 'string' && light[key].length === 7) {
 		const lightColor = light[key]
 		const mirageColor = mirage[key]
 		const darkColor = dark[key]
 
 		colorSVG += `
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="#${lightColor}" />
-				<rect height="1.8em" width="20%" x="52.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="#${mirageColor}" />
-				<rect height="1.8em" width="20%" x="77.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="#${darkColor}" />
+				<rect height="1.8em" width="20%" x="27.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="${lightColor}" />
+				<rect height="1.8em" width="20%" x="52.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="${mirageColor}" />
+				<rect height="1.8em" width="20%" x="77.5%" y="${(index * 3) - 1.2}em" rx="5" ry="5" fill="${darkColor}" />
 			</g>
 
 			<g>
 				<text y="${index * 3}em" x="12.5%" fill="#333333">${key}</text>
-				<text y="${index * 3}em" x="37.5%" fill="${fontColorContrast(`#${lightColor}`)}">${lightColor}</text>
-				<text y="${index * 3}em" x="62.5%" fill="${fontColorContrast(`#${mirageColor}`)}">${mirageColor}</text>
-				<text y="${index * 3}em" x="87.5%" fill="${fontColorContrast(`#${darkColor}`)}">${darkColor}</text>
+				<text y="${index * 3}em" x="37.5%" fill="${fontColorContrast(`${lightColor}`)}">${lightColor}</text>
+				<text y="${index * 3}em" x="62.5%" fill="${fontColorContrast(`${mirageColor}`)}">${mirageColor}</text>
+				<text y="${index * 3}em" x="87.5%" fill="${fontColorContrast(`${darkColor}`)}">${darkColor}</text>
 			</g>
 		`
 
@@ -70,9 +70,9 @@ colorSVG = `<?xml version="1.0" standalone="no" ?>
 	</g>
 	<g font-weight="bold">
 		<text y="3em" x="12.5%" fill="#333333">Path</text>
-		<text y="3em" x="37.5%" fill="#${colors.light.common.fg}">Light</text>
-		<text y="3em" x="62.5%" fill="#${colors.mirage.common.fg}">Mirage</text>
-		<text y="3em" x="87.5%" fill="#${colors.dark.common.fg}">Dark</text>
+		<text y="3em" x="37.5%" fill="${colors.light.common.fg}">Light</text>
+		<text y="3em" x="62.5%" fill="${colors.mirage.common.fg}">Mirage</text>
+		<text y="3em" x="87.5%" fill="${colors.dark.common.fg}">Dark</text>
 	</g>
 
 	${colorSVG}

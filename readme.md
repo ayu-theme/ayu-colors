@@ -14,9 +14,9 @@ yarn add ayu
 ```JS
 import { dark, light, mirage } from 'ayu'
 
-dark.ui.bg === '0F1419'
-light.ui.fg === '828C99'
-mirage.syntax.error === 'FF3333'
+dark.common.bg === '#0f1419'
+light.ui.fg === '#828c99'
+mirage.syntax.error === '#ff3333'
 ```
 
 ### Colors

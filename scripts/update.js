@@ -1,12 +1,13 @@
-import { spawn } from 'child_process'
-import { resolve } from 'path'
 import fs from 'fs'
+import { resolve } from 'path'
+import { spawn } from 'child_process'
 
+import camelcaseKeys from 'camelcase-keys'
+import isObject from 'is-object'
+import mapObject from 'map-obj'
 import rimraf from 'rimraf'
 import yaml from 'js-yaml'
-import camelCase from 'lodash.camelcase'
-import mapObject from 'map-obj'
-import isObject from 'is-object'
+
 
 const license = `
 /**
@@ -34,15 +35,18 @@ const license = `
  */
 `
 
-const camelCaseKeys = (obj) => mapObject(obj, (key, value) => ([
-	camelCase(key),
-	isObject(value) ? camelCaseKeys(value) : value
-]))
+const hashtagColors = (obj) => mapObject(obj, (key, value) => {
+	if (value.length === 6) {
+		return [key, `#${value.toLowerCase()}`]
+	}
+
+	return [key, value]
+}, { deep: true })
 
 const template = (colors) => `
 ${license}
 
-export default ${JSON.stringify(camelCaseKeys(colors), null, '\t')}
+export default ${JSON.stringify(hashtagColors(camelcaseKeys(colors, { deep: true })), null, '\t')}
 `
 
 const clone = spawn('git', ['clone', 'https://github.com/dempfi/ayu'])
