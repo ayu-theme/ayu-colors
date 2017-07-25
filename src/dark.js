@@ -33,7 +33,7 @@ export default {
 		"accent": "#f29718"
 	},
 	"ui": {
-		"fg": "#3e4b59",
+		"fg": "#515c66",
 		"panel": {
 			"bg": "#14191f",
 			"shadow": "#000000",
@@ -53,14 +53,14 @@ export default {
 	"syntax": {
 		"error": "#ff3333",
 		"lineHg": "#151a1f",
-		"gutterFg": "#2d3640",
+		"gutter": "#35404c",
 		"selection": "#253340",
 		"stackGuide": "#1a2633",
 		"activeGuide": "#314559",
-		"tag": "#36a3d9",
+		"tag": "#50b4e6",
 		"func": "#ffb454",
 		"regexp": "#95e6cb",
-		"string": "#b8cc52",
+		"string": "#c2d94c",
 		"supVar": "#f07178",
 		"keyword": "#ff7733",
 		"esSpec": "#e6b673",

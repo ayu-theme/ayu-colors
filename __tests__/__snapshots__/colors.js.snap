@@ -13,20 +13,20 @@ Object {
       "error": "#ff3333",
       "esSpec": "#e6b673",
       "func": "#ffb454",
-      "gutterFg": "#2d3640",
+      "gutter": "#35404c",
       "keyword": "#ff7733",
       "lineHg": "#151a1f",
       "operator": "#e7c547",
       "regexp": "#95e6cb",
       "selection": "#253340",
       "stackGuide": "#1a2633",
-      "string": "#b8cc52",
+      "string": "#c2d94c",
       "supVar": "#f07178",
-      "tag": "#36a3d9",
+      "tag": "#50b4e6",
     },
     "theme": "dark",
     "ui": Object {
-      "fg": "#3e4b59",
+      "fg": "#515c66",
       "folder": Object {
         "normal": "#3e4b59",
       },
@@ -48,7 +48,7 @@ Object {
     "common": Object {
       "accent": "#ff6a00",
       "bg": "#fafafa",
-      "fg": "#5c6773",
+      "fg": "#5c6066",
     },
     "syntax": Object {
       "activeGuide": "#b3b2b1",
@@ -57,7 +57,7 @@ Object {
       "error": "#ff3333",
       "esSpec": "#cca37a",
       "func": "#f29718",
-      "gutterFg": "#d9d8d7",
+      "gutter": "#d9d8d7",
       "keyword": "#f2590c",
       "lineHg": "#f2f2f2",
       "operator": "#e7c547",
@@ -70,18 +70,18 @@ Object {
     },
     "theme": "light",
     "ui": Object {
-      "fg": "#828c99",
+      "fg": "#85888c",
       "folder": Object {
-        "normal": "#828c99",
+        "normal": "#878f99",
       },
       "gridDivider": "#e2e4e7",
       "minimap": "130, 140, 153",
       "opacity": "0.2",
       "panel": Object {
         "bg": "#ffffff",
-        "pathFg": "#b0bec5",
+        "pathFg": "#959ca6",
         "rowBg": "#f5f5f5",
-        "shadow": "#a0a0a0",
+        "shadow": "#7e848c",
       },
       "scrollbar": Object {
         "puck": "#000000",
@@ -101,7 +101,7 @@ Object {
       "error": "#ff3333",
       "esSpec": "#ffc44c",
       "func": "#ffd580",
-      "gutterFg": "#3d4752",
+      "gutter": "#3d4752",
       "keyword": "#ffae57",
       "lineHg": "#242b38",
       "operator": "#80d4ff",
@@ -114,7 +114,7 @@ Object {
     },
     "theme": "#mirage",
     "ui": Object {
-      "fg": "#607080",
+      "fg": "#738699",
       "folder": Object {
         "normal": "#3e4b59",
       },
@@ -123,7 +123,7 @@ Object {
       "opacity": "0.3",
       "panel": Object {
         "bg": "#272d38",
-        "pathFg": "#607080",
+        "pathFg": "#66737f",
         "rowBg": "#303540",
         "shadow": "#11141a",
       },

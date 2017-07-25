@@ -28,20 +28,20 @@
 export default {
 	"theme": "light",
 	"common": {
-		"fg": "#5c6773",
+		"accent": "#ff6a00",
 		"bg": "#fafafa",
-		"accent": "#ff6a00"
+		"fg": "#5c6066"
 	},
 	"ui": {
-		"fg": "#828c99",
+		"fg": "#85888c",
 		"panel": {
 			"bg": "#ffffff",
-			"shadow": "#a0a0a0",
-			"pathFg": "#b0bec5",
-			"rowBg": "#f5f5f5"
+			"rowBg": "#f5f5f5",
+			"shadow": "#7e848c",
+			"pathFg": "#959ca6"
 		},
 		"folder": {
-			"normal": "#828c99"
+			"normal": "#878f99"
 		},
 		"scrollbar": {
 			"puck": "#000000"
@@ -53,7 +53,7 @@ export default {
 	"syntax": {
 		"error": "#ff3333",
 		"lineHg": "#f2f2f2",
-		"gutterFg": "#d9d8d7",
+		"gutter": "#d9d8d7",
 		"selection": "#f0eee4",
 		"stackGuide": "#dedddc",
 		"activeGuide": "#b3b2b1",

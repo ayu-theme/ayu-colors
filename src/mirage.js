@@ -33,11 +33,11 @@ export default {
 		"accent": "#ffcc66"
 	},
 	"ui": {
-		"fg": "#607080",
+		"fg": "#738699",
 		"panel": {
 			"bg": "#272d38",
 			"shadow": "#11141a",
-			"pathFg": "#607080",
+			"pathFg": "#66737f",
 			"rowBg": "#303540"
 		},
 		"folder": {
@@ -46,13 +46,13 @@ export default {
 		"scrollbar": {
 			"puck": "#ffffff"
 		},
-		"opacity": "0.3",
 		"gridDivider": "#343d4a",
-		"minimap": "100, 100, 100"
+		"minimap": "100, 100, 100",
+		"opacity": "0.3"
 	},
 	"syntax": {
 		"error": "#ff3333",
-		"gutterFg": "#3d4752",
+		"gutter": "#3d4752",
 		"lineHg": "#242b38",
 		"selection": "#343f4c",
 		"stackGuide": "#39434d",
