@@ -51,21 +51,22 @@ export default {
 		"opacity": "0.3"
 	},
 	"syntax": {
+		"line": "#242b38",
 		"error": "#ff3333",
-		"gutter": "#3d4752",
-		"lineHg": "#242b38",
+		"gutter": "#434e59",
 		"selection": "#343f4c",
 		"stackGuide": "#39434d",
-		"activeGuide": "#606f80",
+		"activeGuide": "#737d87",
 		"tag": "#5ccfe6",
 		"func": "#ffd580",
+		"entity": "#73d0ff",
 		"string": "#bae67e",
 		"regexp": "#95e6cb",
-		"supVar": "#f07178",
-		"keyword": "#ffae57",
-		"esSpec": "#ffc44c",
+		"markup": "#f28779",
+		"keyword": "#ffa759",
+		"special": "#ffc44c",
 		"comment": "#5c6773",
 		"constant": "#d4bfff",
-		"operator": "#80d4ff"
+		"operator": "#f29e74"
 	}
 }

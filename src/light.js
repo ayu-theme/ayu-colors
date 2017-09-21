@@ -30,7 +30,7 @@ export default {
 	"common": {
 		"accent": "#ff6a00",
 		"bg": "#fafafa",
-		"fg": "#5c6066"
+		"fg": "#6e7580"
 	},
 	"ui": {
 		"fg": "#85888c",
@@ -51,21 +51,22 @@ export default {
 		"opacity": "0.2"
 	},
 	"syntax": {
-		"error": "#ff3333",
-		"lineHg": "#f2f2f2",
+		"line": "#f2f2f2",
+		"error": "#f51818",
 		"gutter": "#d9d8d7",
 		"selection": "#f0eee4",
 		"stackGuide": "#dedddc",
 		"activeGuide": "#b3b2b1",
-		"tag": "#41a6d9",
+		"tag": "#55b4d4",
 		"func": "#f29718",
-		"regexp": "#4dbf99",
+		"entity": "#399ee6",
 		"string": "#86b300",
+		"regexp": "#4cbf99",
+		"markup": "#f07171",
+		"keyword": "#fa6e32",
+		"special": "#e6b673",
 		"comment": "#abb0b6",
-		"supVar": "#f07178",
-		"esSpec": "#cca37a",
-		"keyword": "#f2590c",
-		"operator": "#e7c547",
-		"constant": "#a37acc"
+		"constant": "#a37acc",
+		"operator": "#ed9366"
 	}
 }
