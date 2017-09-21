@@ -1,15 +1,15 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="87em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
+<svg width="100%" height="90em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
 	<g>
-		<rect height="87em" width="25%" x="25%" fill="#FAFAFA" />
-		<rect height="87em" width="25%" x="50%" fill="#212733" />
-		<rect height="87em" width="25%" x="75%" fill="#0F1419" />
+		<rect height="90em" width="25%" x="25%" fill="#FAFAFA" />
+		<rect height="90em" width="25%" x="50%" fill="#212733" />
+		<rect height="90em" width="25%" x="75%" fill="#0F1419" />
 	</g>
 	<g font-weight="bold">
 		<text y="3em" x="12.5%" fill="#333333">Path</text>
-		<text y="3em" x="37.5%" fill="#5c6066">Light</text>
+		<text y="3em" x="37.5%" fill="#6e7580">Light</text>
 		<text y="3em" x="62.5%" fill="#d9d7ce">Mirage</text>
 		<text y="3em" x="87.5%" fill="#e6e1cf">Dark</text>
 	</g>
@@ -42,14 +42,14 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="10.8em" rx="5" ry="5" fill="#5c6066" />
+				<rect height="1.8em" width="20%" x="27.5%" y="10.8em" rx="5" ry="5" fill="#6e7580" />
 				<rect height="1.8em" width="20%" x="52.5%" y="10.8em" rx="5" ry="5" fill="#d9d7ce" />
 				<rect height="1.8em" width="20%" x="77.5%" y="10.8em" rx="5" ry="5" fill="#e6e1cf" />
 			</g>
 
 			<g>
 				<text y="12em" x="12.5%" fill="#333333">common.fg</text>
-				<text y="12em" x="37.5%" fill="#ffffff">#5c6066</text>
+				<text y="12em" x="37.5%" fill="#ffffff">#6e7580</text>
 				<text y="12em" x="62.5%" fill="#000000">#d9d7ce</text>
 				<text y="12em" x="87.5%" fill="#000000">#e6e1cf</text>
 			</g>
@@ -159,41 +159,41 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="37.8em" rx="5" ry="5" fill="#ff3333" />
-				<rect height="1.8em" width="20%" x="52.5%" y="37.8em" rx="5" ry="5" fill="#ff3333" />
-				<rect height="1.8em" width="20%" x="77.5%" y="37.8em" rx="5" ry="5" fill="#ff3333" />
+				<rect height="1.8em" width="20%" x="27.5%" y="37.8em" rx="5" ry="5" fill="#f2f2f2" />
+				<rect height="1.8em" width="20%" x="52.5%" y="37.8em" rx="5" ry="5" fill="#242b38" />
+				<rect height="1.8em" width="20%" x="77.5%" y="37.8em" rx="5" ry="5" fill="#151a1f" />
 			</g>
 
 			<g>
-				<text y="39em" x="12.5%" fill="#333333">syntax.error</text>
-				<text y="39em" x="37.5%" fill="#000000">#ff3333</text>
-				<text y="39em" x="62.5%" fill="#000000">#ff3333</text>
-				<text y="39em" x="87.5%" fill="#000000">#ff3333</text>
+				<text y="39em" x="12.5%" fill="#333333">syntax.line</text>
+				<text y="39em" x="37.5%" fill="#000000">#f2f2f2</text>
+				<text y="39em" x="62.5%" fill="#ffffff">#242b38</text>
+				<text y="39em" x="87.5%" fill="#ffffff">#151a1f</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="40.8em" rx="5" ry="5" fill="#f2f2f2" />
-				<rect height="1.8em" width="20%" x="52.5%" y="40.8em" rx="5" ry="5" fill="#242b38" />
-				<rect height="1.8em" width="20%" x="77.5%" y="40.8em" rx="5" ry="5" fill="#151a1f" />
+				<rect height="1.8em" width="20%" x="27.5%" y="40.8em" rx="5" ry="5" fill="#f51818" />
+				<rect height="1.8em" width="20%" x="52.5%" y="40.8em" rx="5" ry="5" fill="#ff3333" />
+				<rect height="1.8em" width="20%" x="77.5%" y="40.8em" rx="5" ry="5" fill="#ff3333" />
 			</g>
 
 			<g>
-				<text y="42em" x="12.5%" fill="#333333">syntax.lineHg</text>
-				<text y="42em" x="37.5%" fill="#000000">#f2f2f2</text>
-				<text y="42em" x="62.5%" fill="#ffffff">#242b38</text>
-				<text y="42em" x="87.5%" fill="#ffffff">#151a1f</text>
+				<text y="42em" x="12.5%" fill="#333333">syntax.error</text>
+				<text y="42em" x="37.5%" fill="#ffffff">#f51818</text>
+				<text y="42em" x="62.5%" fill="#000000">#ff3333</text>
+				<text y="42em" x="87.5%" fill="#000000">#ff3333</text>
 			</g>
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="43.8em" rx="5" ry="5" fill="#d9d8d7" />
-				<rect height="1.8em" width="20%" x="52.5%" y="43.8em" rx="5" ry="5" fill="#3d4752" />
+				<rect height="1.8em" width="20%" x="52.5%" y="43.8em" rx="5" ry="5" fill="#434e59" />
 				<rect height="1.8em" width="20%" x="77.5%" y="43.8em" rx="5" ry="5" fill="#35404c" />
 			</g>
 
 			<g>
 				<text y="45em" x="12.5%" fill="#333333">syntax.gutter</text>
 				<text y="45em" x="37.5%" fill="#000000">#d9d8d7</text>
-				<text y="45em" x="62.5%" fill="#ffffff">#3d4752</text>
+				<text y="45em" x="62.5%" fill="#ffffff">#434e59</text>
 				<text y="45em" x="87.5%" fill="#ffffff">#35404c</text>
 			</g>
 		
@@ -225,28 +225,28 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="52.8em" rx="5" ry="5" fill="#b3b2b1" />
-				<rect height="1.8em" width="20%" x="52.5%" y="52.8em" rx="5" ry="5" fill="#606f80" />
+				<rect height="1.8em" width="20%" x="52.5%" y="52.8em" rx="5" ry="5" fill="#737d87" />
 				<rect height="1.8em" width="20%" x="77.5%" y="52.8em" rx="5" ry="5" fill="#314559" />
 			</g>
 
 			<g>
 				<text y="54em" x="12.5%" fill="#333333">syntax.activeGuide</text>
 				<text y="54em" x="37.5%" fill="#000000">#b3b2b1</text>
-				<text y="54em" x="62.5%" fill="#ffffff">#606f80</text>
+				<text y="54em" x="62.5%" fill="#ffffff">#737d87</text>
 				<text y="54em" x="87.5%" fill="#ffffff">#314559</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="55.8em" rx="5" ry="5" fill="#41a6d9" />
+				<rect height="1.8em" width="20%" x="27.5%" y="55.8em" rx="5" ry="5" fill="#55b4d4" />
 				<rect height="1.8em" width="20%" x="52.5%" y="55.8em" rx="5" ry="5" fill="#5ccfe6" />
-				<rect height="1.8em" width="20%" x="77.5%" y="55.8em" rx="5" ry="5" fill="#50b4e6" />
+				<rect height="1.8em" width="20%" x="77.5%" y="55.8em" rx="5" ry="5" fill="#39bae6" />
 			</g>
 
 			<g>
 				<text y="57em" x="12.5%" fill="#333333">syntax.tag</text>
-				<text y="57em" x="37.5%" fill="#000000">#41a6d9</text>
+				<text y="57em" x="37.5%" fill="#000000">#55b4d4</text>
 				<text y="57em" x="62.5%" fill="#000000">#5ccfe6</text>
-				<text y="57em" x="87.5%" fill="#000000">#50b4e6</text>
+				<text y="57em" x="87.5%" fill="#000000">#39bae6</text>
 			</g>
 		
 			<g>
@@ -263,16 +263,16 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="5" ry="5" fill="#4dbf99" />
-				<rect height="1.8em" width="20%" x="52.5%" y="61.8em" rx="5" ry="5" fill="#95e6cb" />
-				<rect height="1.8em" width="20%" x="77.5%" y="61.8em" rx="5" ry="5" fill="#95e6cb" />
+				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="5" ry="5" fill="#399ee6" />
+				<rect height="1.8em" width="20%" x="52.5%" y="61.8em" rx="5" ry="5" fill="#73d0ff" />
+				<rect height="1.8em" width="20%" x="77.5%" y="61.8em" rx="5" ry="5" fill="#59c2ff" />
 			</g>
 
 			<g>
-				<text y="63em" x="12.5%" fill="#333333">syntax.regexp</text>
-				<text y="63em" x="37.5%" fill="#000000">#4dbf99</text>
-				<text y="63em" x="62.5%" fill="#000000">#95e6cb</text>
-				<text y="63em" x="87.5%" fill="#000000">#95e6cb</text>
+				<text y="63em" x="12.5%" fill="#333333">syntax.entity</text>
+				<text y="63em" x="37.5%" fill="#000000">#399ee6</text>
+				<text y="63em" x="62.5%" fill="#000000">#73d0ff</text>
+				<text y="63em" x="87.5%" fill="#000000">#59c2ff</text>
 			</g>
 		
 			<g>
@@ -289,68 +289,68 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="67.8em" rx="5" ry="5" fill="#abb0b6" />
-				<rect height="1.8em" width="20%" x="52.5%" y="67.8em" rx="5" ry="5" fill="#5c6773" />
-				<rect height="1.8em" width="20%" x="77.5%" y="67.8em" rx="5" ry="5" fill="#5c6773" />
+				<rect height="1.8em" width="20%" x="27.5%" y="67.8em" rx="5" ry="5" fill="#4cbf99" />
+				<rect height="1.8em" width="20%" x="52.5%" y="67.8em" rx="5" ry="5" fill="#95e6cb" />
+				<rect height="1.8em" width="20%" x="77.5%" y="67.8em" rx="5" ry="5" fill="#95e6cb" />
 			</g>
 
 			<g>
-				<text y="69em" x="12.5%" fill="#333333">syntax.comment</text>
-				<text y="69em" x="37.5%" fill="#000000">#abb0b6</text>
-				<text y="69em" x="62.5%" fill="#ffffff">#5c6773</text>
-				<text y="69em" x="87.5%" fill="#ffffff">#5c6773</text>
+				<text y="69em" x="12.5%" fill="#333333">syntax.regexp</text>
+				<text y="69em" x="37.5%" fill="#000000">#4cbf99</text>
+				<text y="69em" x="62.5%" fill="#000000">#95e6cb</text>
+				<text y="69em" x="87.5%" fill="#000000">#95e6cb</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="5" ry="5" fill="#f07178" />
-				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="5" ry="5" fill="#f07178" />
+				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="5" ry="5" fill="#f07171" />
+				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="5" ry="5" fill="#f28779" />
 				<rect height="1.8em" width="20%" x="77.5%" y="70.8em" rx="5" ry="5" fill="#f07178" />
 			</g>
 
 			<g>
-				<text y="72em" x="12.5%" fill="#333333">syntax.supVar</text>
-				<text y="72em" x="37.5%" fill="#000000">#f07178</text>
-				<text y="72em" x="62.5%" fill="#000000">#f07178</text>
+				<text y="72em" x="12.5%" fill="#333333">syntax.markup</text>
+				<text y="72em" x="37.5%" fill="#000000">#f07171</text>
+				<text y="72em" x="62.5%" fill="#000000">#f28779</text>
 				<text y="72em" x="87.5%" fill="#000000">#f07178</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="5" ry="5" fill="#cca37a" />
-				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="5" ry="5" fill="#ffc44c" />
-				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="5" ry="5" fill="#e6b673" />
+				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="5" ry="5" fill="#fa6e32" />
+				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="5" ry="5" fill="#ffa759" />
+				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="5" ry="5" fill="#ff7733" />
 			</g>
 
 			<g>
-				<text y="75em" x="12.5%" fill="#333333">syntax.esSpec</text>
-				<text y="75em" x="37.5%" fill="#000000">#cca37a</text>
-				<text y="75em" x="62.5%" fill="#000000">#ffc44c</text>
-				<text y="75em" x="87.5%" fill="#000000">#e6b673</text>
+				<text y="75em" x="12.5%" fill="#333333">syntax.keyword</text>
+				<text y="75em" x="37.5%" fill="#000000">#fa6e32</text>
+				<text y="75em" x="62.5%" fill="#000000">#ffa759</text>
+				<text y="75em" x="87.5%" fill="#000000">#ff7733</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="5" ry="5" fill="#f2590c" />
-				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="5" ry="5" fill="#ffae57" />
-				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="5" ry="5" fill="#ff7733" />
+				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="5" ry="5" fill="#e6b673" />
+				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="5" ry="5" fill="#ffc44c" />
+				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="5" ry="5" fill="#e6b673" />
 			</g>
 
 			<g>
-				<text y="78em" x="12.5%" fill="#333333">syntax.keyword</text>
-				<text y="78em" x="37.5%" fill="#000000">#f2590c</text>
-				<text y="78em" x="62.5%" fill="#000000">#ffae57</text>
-				<text y="78em" x="87.5%" fill="#000000">#ff7733</text>
+				<text y="78em" x="12.5%" fill="#333333">syntax.special</text>
+				<text y="78em" x="37.5%" fill="#000000">#e6b673</text>
+				<text y="78em" x="62.5%" fill="#000000">#ffc44c</text>
+				<text y="78em" x="87.5%" fill="#000000">#e6b673</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="79.8em" rx="5" ry="5" fill="#e7c547" />
-				<rect height="1.8em" width="20%" x="52.5%" y="79.8em" rx="5" ry="5" fill="#80d4ff" />
-				<rect height="1.8em" width="20%" x="77.5%" y="79.8em" rx="5" ry="5" fill="#e7c547" />
+				<rect height="1.8em" width="20%" x="27.5%" y="79.8em" rx="5" ry="5" fill="#abb0b6" />
+				<rect height="1.8em" width="20%" x="52.5%" y="79.8em" rx="5" ry="5" fill="#5c6773" />
+				<rect height="1.8em" width="20%" x="77.5%" y="79.8em" rx="5" ry="5" fill="#5c6773" />
 			</g>
 
 			<g>
-				<text y="81em" x="12.5%" fill="#333333">syntax.operator</text>
-				<text y="81em" x="37.5%" fill="#000000">#e7c547</text>
-				<text y="81em" x="62.5%" fill="#000000">#80d4ff</text>
-				<text y="81em" x="87.5%" fill="#000000">#e7c547</text>
+				<text y="81em" x="12.5%" fill="#333333">syntax.comment</text>
+				<text y="81em" x="37.5%" fill="#000000">#abb0b6</text>
+				<text y="81em" x="62.5%" fill="#ffffff">#5c6773</text>
+				<text y="81em" x="87.5%" fill="#ffffff">#5c6773</text>
 			</g>
 		
 			<g>
@@ -364,6 +364,19 @@
 				<text y="84em" x="37.5%" fill="#000000">#a37acc</text>
 				<text y="84em" x="62.5%" fill="#000000">#d4bfff</text>
 				<text y="84em" x="87.5%" fill="#000000">#ffee99</text>
+			</g>
+		
+			<g>
+				<rect height="1.8em" width="20%" x="27.5%" y="85.8em" rx="5" ry="5" fill="#ed9366" />
+				<rect height="1.8em" width="20%" x="52.5%" y="85.8em" rx="5" ry="5" fill="#f29e74" />
+				<rect height="1.8em" width="20%" x="77.5%" y="85.8em" rx="5" ry="5" fill="#f29668" />
+			</g>
+
+			<g>
+				<text y="87em" x="12.5%" fill="#333333">syntax.operator</text>
+				<text y="87em" x="37.5%" fill="#000000">#ed9366</text>
+				<text y="87em" x="62.5%" fill="#000000">#f29e74</text>
+				<text y="87em" x="87.5%" fill="#000000">#f29668</text>
 			</g>
 		
 
