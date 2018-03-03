@@ -1,5 +1,3 @@
-
-
 /**
  * MIT License
  *
@@ -25,48 +23,63 @@
  */
 
 
+import color, { Color } from './color'
+const _ = color('212733')
+
+const common = {
+  accent: _`FFCC66`,
+  bg: _`212733`,
+  fg: _`CCC9C2`,
+  ui: _`667380`
+}
+
+const syntax = {
+  tag: _`5CCFE6`,
+  func: _`FFD580`,
+  entity: _`73D0FF`,
+  string: _`BAE67E`,
+  regexp: _`95E6CB`,
+  markup: _`F28779`,
+  keyword: _`FFA759`,
+  special: _`FFC44C`,
+  comment: _`5C6773`,
+  constant: _`D4BFFF`,
+  operator: _`F29E74`,
+  error: _`FF3333`
+}
+
+const ui = {
+  panel: {
+    bg: common.ui.fade(7),
+    shadow: common.bg.darken(30),
+    border: common.bg.darken(40),
+    row: common.bg.darken(5)
+  },
+  icon: common.ui.fade(55),
+  scrollbar: { puck: _`FFFFFF` },
+  separator: common.bg.darken(20),
+  minimap: common.ui,
+  opacity: 1.0
+}
+
+const editor = {
+  line: common.bg.darken(14),
+  gutter: common.ui.fade(35),
+  selection: {
+    bg: syntax.entity.fade(10),
+    inactive: syntax.entity.fade(8),
+    border: syntax.entity.fade(13)
+  },
+  guide: {
+    stack: common.ui.fade(30),
+    active: common.ui.fade(70),
+    normal: common.ui.fade(30)
+  },
+}
+
 export default {
-	"theme": "#mirage",
-	"common": {
-		"bg": "#212733",
-		"fg": "#d9d7ce",
-		"accent": "#ffcc66"
-	},
-	"ui": {
-		"fg": "#738699",
-		"panel": {
-			"bg": "#272d38",
-			"shadow": "#11141a",
-			"pathFg": "#66737f",
-			"rowBg": "#303540"
-		},
-		"folder": {
-			"normal": "#3e4b59"
-		},
-		"scrollbar": {
-			"puck": "#ffffff"
-		},
-		"gridDivider": "#343d4a",
-		"minimap": "100, 100, 100",
-		"opacity": "0.3"
-	},
-	"syntax": {
-		"line": "#242b38",
-		"error": "#ff3333",
-		"gutter": "#434e59",
-		"selection": "#343f4c",
-		"stackGuide": "#39434d",
-		"activeGuide": "#737d87",
-		"tag": "#5ccfe6",
-		"func": "#ffd580",
-		"entity": "#73d0ff",
-		"string": "#bae67e",
-		"regexp": "#95e6cb",
-		"markup": "#f28779",
-		"keyword": "#ffa759",
-		"special": "#ffc44c",
-		"comment": "#5c6773",
-		"constant": "#d4bfff",
-		"operator": "#f29e74"
-	}
+  common,
+  syntax,
+  ui,
+  editor
 }

@@ -3,23 +3,18 @@
   "version": "5.0.0",
   "description": "The ayu sublime theme as a color palette",
   "main": "dist/colors.js",
-  "jsnext:main": "src/colors.js",
-  "module": "src/colors.js",
+  "types": "dist/colors.d.ts",
   "scripts": {
-    "build": "run-s clear-build build-cjs",
-    "build-cjs": "babel src --out-dir dist",
-    "build-svg": "babel-node scripts/build-svg.js",
-    "clear-after": "rimraf ayu",
-    "clear-before": "rimraf ayu src/dark.js src/light.js src/mirage.js",
+    "build": "run-s clear-build compile",
+    "compile": "tsc --pretty",
+    "svg": "node scripts/build-svg.js",
+    "prepublish": "run-s build svg",
     "clear-build": "rimraf dist",
-    "prepublish": "run-s build build-svg",
-    "start": "run-s clear-before update clear-after test build-svg",
-    "test": "jest",
-    "update": "babel-node scripts/update.js"
+    "start": "run-s build svg test",
+    "test": "node dist/__test__"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": {
     "url": "https://github.com/ayu-theme/ayu-colors",
@@ -28,19 +23,15 @@
   "author": "Konstantin Pschera <me@kons.ch>",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "6.18.0",
-    "babel-core": "6.18.2",
-    "babel-jest": "17.0.2",
-    "babel-preset-latest": "6.16.0",
-    "babel-preset-stage-0": "6.16.0",
-    "camelcase-keys": "4.0.0",
-    "cross-env": "3.1.3",
+    "@types/node": "^9.4.6",
     "font-color-contrast": "1.0.3",
     "is-object": "1.0.1",
-    "jest": "17.0.3",
-    "js-yaml": "3.7.0",
-    "map-obj": "2.0.0",
     "npm-run-all": "3.1.1",
-    "rimraf": "2.5.4"
+    "rimraf": "2.5.4",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/chroma-js": "^1.3.3",
+    "chroma-js": "^1.3.6"
   }
 }

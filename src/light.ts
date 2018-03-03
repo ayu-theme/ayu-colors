@@ -1,5 +1,3 @@
-
-
 /**
  * MIT License
  *
@@ -25,48 +23,63 @@
  */
 
 
+import color, { Color } from './color'
+const _ = color('FAFAFA')
+
+const common = {
+  accent: _`FF8F40`,
+  bg: _`FAFAFA`,
+  fg: _`61676C`,
+  ui: _`9DA2A6`
+}
+
+const syntax = {
+  tag: _`55B4D4`,
+  func: _`F29718`,
+  entity: _`399EE6`,
+  string: _`86B300`,
+  regexp: _`4CBF99`,
+  markup: _`F07171`,
+  keyword: _`FA6E32`,
+  special: _`E6B673`,
+  comment: _`ABB0B6`,
+  constant: _`A37ACC`,
+  operator: _`ED9366`,
+  error: _`F51818`
+}
+
+const ui = {
+  panel: {
+    bg: _`FFFFFF`,
+    shadow: common.bg.darken(20),
+    border: common.bg.darken(20),
+    row: common.bg.darken(2)
+  },
+  icon: common.ui.fade(60),
+  scrollbar: { puck: _`000000` },
+  separator: common.bg.darken(5),
+  minimap: common.ui,
+  opacity: 1
+}
+
+const editor = {
+  line: common.bg.darken(3),
+  gutter: common.ui.fade(35),
+  selection: {
+    bg: syntax.entity.fade(9),
+    inactive: syntax.entity.fade(7),
+    border: syntax.entity.fade(12)
+  },
+  guide: {
+    stack: common.ui.fade(30),
+    active: common.ui.fade(70),
+    normal: common.ui.fade(30)
+  },
+}
+
 export default {
-	"theme": "light",
-	"common": {
-		"accent": "#ff6a00",
-		"bg": "#fafafa",
-		"fg": "#6e7580"
-	},
-	"ui": {
-		"fg": "#85888c",
-		"panel": {
-			"bg": "#ffffff",
-			"rowBg": "#f5f5f5",
-			"shadow": "#7e848c",
-			"pathFg": "#959ca6"
-		},
-		"folder": {
-			"normal": "#878f99"
-		},
-		"scrollbar": {
-			"puck": "#000000"
-		},
-		"gridDivider": "#e2e4e7",
-		"minimap": "130, 140, 153",
-		"opacity": "0.2"
-	},
-	"syntax": {
-		"line": "#f2f2f2",
-		"error": "#f51818",
-		"gutter": "#d9d8d7",
-		"selection": "#f0eee4",
-		"stackGuide": "#dedddc",
-		"activeGuide": "#b3b2b1",
-		"tag": "#55b4d4",
-		"func": "#f29718",
-		"entity": "#399ee6",
-		"string": "#86b300",
-		"regexp": "#4cbf99",
-		"markup": "#f07171",
-		"keyword": "#fa6e32",
-		"special": "#e6b673",
-		"comment": "#abb0b6",
-		"constant": "#a37acc",
-		"operator": "#ed9366"
-	}
+  common,
+  syntax,
+  ui,
+  editor
 }
