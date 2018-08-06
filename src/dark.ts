@@ -1,5 +1,3 @@
-
-
 /**
  * MIT License
  *
@@ -25,48 +23,63 @@
  */
 
 
+import color, { Color } from './color'
+const _ = color('0F1419')
+
+const common = {
+  accent: _`F29718`,
+  bg: _`0F1419`,
+  fg: _`BFBAB0`,
+  ui: _`475259`
+}
+
+const syntax = {
+  tag: _`39BAE6`,
+  func: _`FFB454`,
+  entity: _`59C2FF`,
+  string: _`C2D94C`,
+  regexp: _`95E6CB`,
+  markup: _`F07178`,
+  keyword: _`FF7733`,
+  special: _`E6B673`,
+  comment: _`5C6773`,
+  constant: _`FFEE99`,
+  operator: _`F29668`,
+  error: _`FF3333`
+}
+
+const ui = {
+  panel: {
+    bg: common.ui.fade(7),
+    shadow: common.bg.darken(30),
+    border: common.bg.darken(80),
+    row: common.bg.darken(20)
+  },
+  icon: common.ui.fade(55),
+  scrollbar: { puck: _`FFFFFF` },
+  separator: common.bg.darken(36),
+  minimap: common.fg.darken(50),
+  opacity: 1.0
+}
+
+const editor = {
+  line: common.bg.darken(30),
+  gutter: common.ui.fade(40),
+  selection: {
+    bg: syntax.entity.fade(9),
+    inactive: syntax.entity.fade(6),
+    border: syntax.entity.fade(13)
+  },
+  guide: {
+    stack: common.ui.fade(30),
+    active: common.ui.fade(70),
+    normal: common.ui.fade(30)
+  },
+}
+
 export default {
-	"theme": "dark",
-	"common": {
-		"bg": "#0f1419",
-		"fg": "#e6e1cf",
-		"accent": "#f29718"
-	},
-	"ui": {
-		"fg": "#515c66",
-		"panel": {
-			"bg": "#14191f",
-			"shadow": "#000000",
-			"pathFg": "#42505e",
-			"rowBg": "#191f26"
-		},
-		"folder": {
-			"normal": "#3e4b59"
-		},
-		"scrollbar": {
-			"puck": "#ffffff"
-		},
-		"gridDivider": "#1d242c",
-		"minimap": "100, 100, 100",
-		"opacity": "0.3"
-	},
-	"syntax": {
-		"line": "#151a1f",
-		"error": "#ff3333",
-		"gutter": "#35404c",
-		"selection": "#253340",
-		"stackGuide": "#1a2633",
-		"activeGuide": "#314559",
-		"tag": "#39bae6",
-		"func": "#ffb454",
-		"entity": "#59c2ff",
-		"string": "#c2d94c",
-		"regexp": "#95e6cb",
-		"markup": "#f07178",
-		"keyword": "#ff7733",
-		"special": "#e6b673",
-		"comment": "#5c6773",
-		"constant": "#ffee99",
-		"operator": "#f29668"
-	}
+  common,
+  syntax,
+  ui,
+  editor
 }
