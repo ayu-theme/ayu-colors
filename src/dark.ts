@@ -51,19 +51,19 @@ const syntax = {
 const ui = {
   panel: {
     bg: common.ui.fade(7),
-    shadow: common.bg.darken(30),
+    shadow: common.bg.darken(20),
     border: common.bg.darken(80),
-    row: common.bg.darken(20)
+    row: common.bg.darken(15)
   },
   icon: common.ui.fade(55),
   scrollbar: { puck: _`FFFFFF` },
-  separator: common.bg.darken(36),
+  separator: common.bg.darken(15),
   minimap: common.fg.darken(50),
   opacity: 1.0
 }
 
 const editor = {
-  line: common.bg.darken(30),
+  line: common.bg.darken(14),
   gutter: common.ui.fade(40),
   selection: {
     bg: syntax.entity.fade(9),

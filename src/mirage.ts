@@ -53,7 +53,7 @@ const ui = {
     bg: common.ui.fade(7),
     shadow: common.bg.darken(30),
     border: common.bg.darken(40),
-    row: common.bg.darken(5)
+    row: common.bg.darken(14)
   },
   icon: common.ui.fade(55),
   scrollbar: { puck: _`FFFFFF` },
