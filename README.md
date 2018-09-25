@@ -27,4 +27,4 @@ _This package includes TypeScript definitions._
 
 ### Colors
 
-<img width="100%" src="https://cdn.rawgit.com/ayu-theme/ayu-colors/master/colors.svg">
+<img width="100%" src="./colors.svg">

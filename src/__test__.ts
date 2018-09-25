@@ -1,10 +1,10 @@
 import * as assert from 'assert'
-import { Color } from './color'
+import * as chroma from 'chroma-js'
 import * as colors from './colors'
 
 const removeValues = (object: object) => {
   for (const key of Object.keys(object)) {
-    if (object[key] instanceof Color) object[key] = ''
+    if (object[key]._rgb) object[key] = ''
     else object[key] = removeValues(object[key])
   }
   return object
