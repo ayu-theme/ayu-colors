@@ -7,7 +7,10 @@
         "baseUrl": "src",
         "target": "ES5",
         "rootDir": "src",
-        "outDir": "dist"
+        "outDir": "dist",
+        "lib": [
+            "es2016"
+        ]
     },
     "exclude": [
         "node_modules",

@@ -12,7 +12,7 @@ function flattenObject(object) {
   const toReturn = {}
   Object.keys(object).forEach(key => {
     const element = object[key]
-    if (element instanceof Color) {
+    if (element._rgb) {
       toReturn[key] = element
     } else {
       const flattened = flattenObject(element)
@@ -33,23 +33,23 @@ let colorSVG = ''
 
 let index = 2
 for (let key in light) {
-  if (light.hasOwnProperty(key) && light[key] instanceof Color) {
+  if (light.hasOwnProperty(key) && light[key]._rgb) {
     const lightColor = light[key]
     const mirageColor = mirage[key]
     const darkColor = dark[key]
 
     colorSVG += `
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${lightColor.hex}" />
-				<rect height="1.8em" width="20%" x="52.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${mirageColor.hex}" />
-				<rect height="1.8em" width="20%" x="77.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${darkColor.hex}" />
+				<rect height="1.8em" width="20%" x="27.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${lightColor.hex()}" />
+				<rect height="1.8em" width="20%" x="52.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${mirageColor.hex()}" />
+				<rect height="1.8em" width="20%" x="77.5%" y="${(index * 3) - 1.2}em" rx="2" ry="2" fill="${darkColor.hex()}" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="${index * 3.25}em" x="12.5%" fill="333333">${key}</text>
-				<text y="${index * 3.25}em" x="37.5%" fill="${fontColorContrast(`${lightColor.hex}`)}">${lightColor.hex.toUpperCase()}</text>
-				<text y="${index * 3.25}em" x="62.5%" fill="${fontColorContrast(`${mirageColor.hex}`)}">${mirageColor.hex.toUpperCase()}</text>
-				<text y="${index * 3.25}em" x="87.5%" fill="${fontColorContrast(`${darkColor.hex}`)}">${darkColor.hex.toUpperCase()}</text>
+				<text y="${index * 3.25}em" x="37.5%" fill="${fontColorContrast(`${lightColor.hex()}`)}">${lightColor.hex().toUpperCase()}</text>
+				<text y="${index * 3.25}em" x="62.5%" fill="${fontColorContrast(`${mirageColor.hex()}`)}">${mirageColor.hex().toUpperCase()}</text>
+				<text y="${index * 3.25}em" x="87.5%" fill="${fontColorContrast(`${darkColor.hex()}`)}">${darkColor.hex().toUpperCase()}</text>
 			</g>
 		`
 
@@ -68,9 +68,9 @@ colorSVG = `<?xml version="1.0" standalone="no" ?>
     </g>
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="${colors.light.common.fg.hex}">Light</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="${colors.mirage.common.fg.hex}">Mirage</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="${colors.dark.common.fg.hex}">Dark</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="${colors.light.common.fg.hex()}">Light</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="${colors.mirage.common.fg.hex()}">Mirage</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="${colors.dark.common.fg.hex()}">Dark</text>
     </g>
 
     ${colorSVG}
