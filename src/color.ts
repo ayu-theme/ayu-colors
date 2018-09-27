@@ -14,9 +14,9 @@ export default (hexBase: string) => {
         if (prop == 'hex') {
           const alpha: number = (target.alpha() as any) * 255
           return () => {
-            if (alpha == 255) return target.hex();
-            const str = parseInt(alpha.toFixed(0)).toString(16)
-            return target.hex() + (str.length == 1 ? `0${str}` : str)
+            const hex = target.hex()
+            if (alpha == 255 || hex.length == 9) return target.hex();
+            return hex.substr(0, 7) + '0' + hex.substr(7)
           }
         }
 
