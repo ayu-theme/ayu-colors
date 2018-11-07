@@ -1,9 +1,9 @@
 import color from './color'
-const _ = color('212733')
+const _ = color('1F2430')
 
 const common = {
   accent: _('FFCC66'),
-  bg: _('212733'),
+  bg: _('1F2430'),
   fg: _('CBCCC6'),
   ui: _('707A8C')
 }
@@ -16,7 +16,7 @@ const syntax = {
   regexp: _('95E6CB'),
   markup: _('F28779'),
   keyword: _('FFA759'),
-  special: _('FFDD99'),
+  special: _('FFE6B3'),
   comment: _('5C6773'),
   constant: _('D4BFFF'),
   operator: _('F29E74'),

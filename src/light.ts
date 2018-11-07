@@ -2,7 +2,7 @@ import color from './color'
 const _ = color('FAFAFA')
 
 const common = {
-  accent: _('F2973D'),
+  accent: _('FF9940'),
   bg: _('FAFAFA'),
   fg: _('6C7680'),
   ui: _('959DA6')
@@ -10,13 +10,13 @@ const common = {
 
 const syntax = {
   tag: _('55B4D4'),
-  func: _('F29718'),
+  func: _('F2AE49'),
   entity: _('399EE6'),
   string: _('86B300'),
   regexp: _('4CBF99'),
   markup: _('F07171'),
-  keyword: _('FA6E32'),
-  special: _('E6B673'),
+  keyword: _('FA8D3E'),
+  special: _('E6BA7E'),
   comment: _('ABB0B6'),
   constant: _('A37ACC'),
   operator: _('ED9366'),
@@ -33,7 +33,7 @@ const ui = {
   line: common.ui.alpha(.1),
   panel: {
     bg: common.bg.brighten(.1),
-    shadow: common.bg.darken(.3),
+    shadow: common.fg.darken(.5).alpha(.25),
     border: common.bg.darken(.2)
   },
   gutter: {

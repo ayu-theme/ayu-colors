@@ -1,11 +1,11 @@
 import color from './color'
-const _ = color('0F1419')
+const _ = color('0A0E14')
 
 const common = {
-  accent: _('F29718'),
-  bg: _('0D131A'),
-  fg: _('BFBAB0'),
-  ui: _('475059')
+  accent: _('E6B450'),
+  bg: _('0A0E14'),
+  fg: _('B3B1AD'),
+  ui: _('3D424D')
 }
 
 const syntax = {
@@ -15,7 +15,7 @@ const syntax = {
   string: _('C2D94C'),
   regexp: _('95E6CB'),
   markup: _('F07178'),
-  keyword: _('FF7733'),
+  keyword: _('FF8F40'),
   special: _('E6B673'),
   comment: _('626A73'),
   constant: _('FFEE99'),
@@ -32,13 +32,13 @@ const vcs = {
 const ui = {
   line: common.bg.darken(.13),
   panel: {
-    bg: common.bg.brighten(.1),
+    bg: common.bg.brighten(.05),
     shadow: common.bg.darken(.2),
     border: common.bg.darken(.8)
   },
   gutter: {
-    normal: common.ui.alpha(.4),
-    active: common.ui.alpha(.8)
+    normal: common.ui.alpha(.6),
+    active: common.ui.alpha(.9)
   },
   selection: {
     bg: vcs.modified.fade(.87),
@@ -46,8 +46,8 @@ const ui = {
     border: vcs.modified.fade(.8)
   },
   guide: {
-    active: common.ui.alpha(.7),
-    normal: common.ui.alpha(.3)
+    normal: common.ui.alpha(.4),
+    active: common.ui.alpha(.7)
   }
 }
 
