@@ -24,7 +24,11 @@ export default (hexBase: string) => {
           return (value) => applyProxy(chroma.mix(base, color, 1 - value).hex())
         }
 
-        return (...args) => applyProxy(target[prop](...args))
+        return (...args) => {
+          const result = target[prop](...args)
+          return result.constructor && result.constructor.prototype == color.constructor.prototype
+            ? applyProxy(result) : result
+        }
       }
     }) as any
   }
