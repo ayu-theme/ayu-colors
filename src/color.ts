@@ -1,37 +1,39 @@
 import * as chroma from 'chroma-js'
 
-export interface Color extends chroma.Color {
-  darken(value: number): Color
-  fade(value: number): Color
-}
 
-export default (hexBase: string) => {
-  const base = chroma(hexBase)
-  const applyProxy = (hexColor: string): Color => {
-    const color = chroma(hexColor)
-    return new Proxy(color, {
-      get (target: chroma.Color, prop: PropertyKey, receiver: any) {
-        if (prop == 'hex') {
-          const alpha: number = (target.alpha() as any) * 255
-          return () => {
-            const hex = target.hex()
-            if (alpha == 255 || hex.length == 9) return target.hex();
-            return hex.substr(0, 7) + '0' + hex.substr(7)
-          }
-        }
-
-        if (prop == 'fade') {
-          return (value) => applyProxy(chroma.mix(base, color, 1 - value).hex())
-        }
-
-        return (...args) => {
-          const result = target[prop](...args)
-          return result.constructor && result.constructor.prototype == color.constructor.prototype
-            ? applyProxy(result) : result
-        }
-      }
-    }) as any
+export class Color {
+  constructor(private base: chroma.Color, private  color: chroma.Color) {
   }
 
-  return applyProxy
+  rgb() {
+    return this.color.rgb()
+  }
+
+  rgba() {
+    return this.color.rgba()
+  }
+
+  hex(type?: 'rgb' | 'rgba') {
+    return this.color.hex(type)
+  }
+
+  alpha(value: number) {
+    return new Color(this.base, this.color.alpha(value))
+  }
+
+  fade(value: number) {
+    return new Color(this.base, chroma.mix(this.base, this.color, 1 - value))
+  }
+
+  darken(value: number) {
+    return new Color(this.base, this.color.darken(value))
+  }
+
+  brighten(value: number) {
+    return new Color(this.base, this.color.brighten(value))
+  }
 }
+
+export default (hexBase: string) =>
+  (hexColor: string) =>
+    new Color(chroma(hexBase), chroma(hexColor))

@@ -12,7 +12,7 @@ function flattenObject(object) {
   const toReturn = {}
   Object.keys(object).forEach(key => {
     const element = object[key]
-    if (element._rgb) {
+    if (element instanceof Color) {
       toReturn[key] = element
     } else {
       const flattened = flattenObject(element)
@@ -33,7 +33,7 @@ let colorSVG = ''
 
 let index = 2
 for (let key in light) {
-  if (light.hasOwnProperty(key) && light[key]._rgb) {
+  if (light.hasOwnProperty(key) && light[key] instanceof Color) {
     const lightColor = light[key]
     const mirageColor = mirage[key]
     const darkColor = dark[key]
@@ -62,9 +62,9 @@ colorSVG = `<?xml version="1.0" standalone="no" ?>
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg width="100%" height="${index * 3}em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
     <g>
-      <rect height="${index * 3}em" width="25%" x="25%" fill="#FAFAFA" />
-      <rect height="${index * 3}em" width="25%" x="50%" fill="#212733" />
-      <rect height="${index * 3}em" width="25%" x="75%" fill="#0F1419" />
+      <rect height="${index * 3}em" width="25%" x="25%" fill="${colors.light.common.bg.hex()}" />
+      <rect height="${index * 3}em" width="25%" x="50%" fill="${colors.mirage.common.bg.hex()}" />
+      <rect height="${index * 3}em" width="25%" x="75%" fill="${colors.dark.common.bg.hex()}" />
     </g>
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>

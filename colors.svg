@@ -3,9 +3,9 @@
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg width="100%" height="96em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
     <g>
-      <rect height="96em" width="25%" x="25%" fill="#FAFAFA" />
-      <rect height="96em" width="25%" x="50%" fill="#212733" />
-      <rect height="96em" width="25%" x="75%" fill="#0F1419" />
+      <rect height="96em" width="25%" x="25%" fill="#fafafa" />
+      <rect height="96em" width="25%" x="50%" fill="#1f2430" />
+      <rect height="96em" width="25%" x="75%" fill="#0a0e14" />
     </g>
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>
@@ -302,42 +302,42 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="2" ry="2" fill="#e8eef4" />
-				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="2" ry="2" fill="#2a3546" />
-				<rect height="1.8em" width="20%" x="77.5%" y="70.8em" rx="2" ry="2" fill="#161f2a" />
+				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="2" ry="2" fill="#edf0f5" />
+				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="2" ry="2" fill="#34455a" />
+				<rect height="1.8em" width="20%" x="77.5%" y="70.8em" rx="2" ry="2" fill="#273747" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="78em" x="12.5%" fill="333333">ui.selection.bg</text>
-				<text y="78em" x="37.5%" fill="#000000">#E8EEF4</text>
-				<text y="78em" x="62.5%" fill="#ffffff">#2A3546</text>
-				<text y="78em" x="87.5%" fill="#ffffff">#161F2A</text>
+				<text y="78em" x="37.5%" fill="#000000">#EDF0F5</text>
+				<text y="78em" x="62.5%" fill="#ffffff">#34455A</text>
+				<text y="78em" x="87.5%" fill="#ffffff">#273747</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="2" ry="2" fill="#eff3f6" />
-				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="2" ry="2" fill="#262f3e" />
-				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="2" ry="2" fill="#121922" />
+				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="2" ry="2" fill="#f2f4f7" />
+				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="2" ry="2" fill="#2d3b4d" />
+				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="2" ry="2" fill="#1f2c39" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="81.25em" x="12.5%" fill="333333">ui.selection.inactive</text>
-				<text y="81.25em" x="37.5%" fill="#000000">#EFF3F6</text>
-				<text y="81.25em" x="62.5%" fill="#ffffff">#262F3E</text>
-				<text y="81.25em" x="87.5%" fill="#ffffff">#121922</text>
+				<text y="81.25em" x="37.5%" fill="#000000">#F2F4F7</text>
+				<text y="81.25em" x="62.5%" fill="#ffffff">#2D3B4D</text>
+				<text y="81.25em" x="87.5%" fill="#ffffff">#1F2C39</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="2" ry="2" fill="#dee8f1" />
-				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="2" ry="2" fill="#313e52" />
-				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="2" ry="2" fill="#1d2936" />
+				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="2" ry="2" fill="#e5ebf2" />
+				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="2" ry="2" fill="#3c526a" />
+				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="2" ry="2" fill="#304357" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="84.5em" x="12.5%" fill="333333">ui.selection.border</text>
-				<text y="84.5em" x="37.5%" fill="#000000">#DEE8F1</text>
-				<text y="84.5em" x="62.5%" fill="#ffffff">#313E52</text>
-				<text y="84.5em" x="87.5%" fill="#ffffff">#1D2936</text>
+				<text y="84.5em" x="37.5%" fill="#000000">#E5EBF2</text>
+				<text y="84.5em" x="62.5%" fill="#ffffff">#3C526A</text>
+				<text y="84.5em" x="87.5%" fill="#ffffff">#304357</text>
 			</g>
 		
 			<g>

@@ -1,6 +1,6 @@
 {
   "name": "ayu",
-  "version": "7.0.3",
+  "version": "7.1.0",
   "description": "The ayu sublime theme as a color palette",
   "main": "dist/colors.js",
   "types": "dist/colors.d.ts",
@@ -31,7 +31,8 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "@types/chroma-js": "^1.3.3",
-    "chroma-js": "^1.4.0"
+    "@types/chroma-js": "^1.4.1",
+    "chroma-js": "^2.0.3",
+    "nonenumerable": "^1.1.1"
   }
 }
