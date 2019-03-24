@@ -13,11 +13,11 @@ export class Color {
     return this.color.rgba()
   }
 
-  hex(type?: 'rgb' | 'rgba' | 'blend') {
+  hex(type?: 'rgb' | 'rgba' | 'blend'): string {
     if (type != 'blend') return this.color.hex(type)
 
     const alpha: number = this.color.alpha() as any
-    return this.fade(1 - alpha).alpha(1).hex()
+    return this.alpha(1).fade(1 - alpha).hex()
   }
 
   alpha(value: number) {
