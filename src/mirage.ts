@@ -41,9 +41,9 @@ const ui = {
     active: common.ui.alpha(.8)
   },
   selection: {
-    bg: vcs.modified.fade(.87),
-    inactive: vcs.modified.fade(.92),
-    border: vcs.modified.fade(.8)
+    bg: _('7399E6').fade(.87),
+    inactive: _('96B0E6').fade(.93),
+    border: _('96B0E6').fade(.93)
   },
   guide: {
     active: common.ui.alpha(.7),

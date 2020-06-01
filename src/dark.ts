@@ -42,7 +42,7 @@ const ui = {
   },
   selection: {
     bg: vcs.modified.fade(.87),
-    inactive: vcs.modified.fade(.92),
+    inactive: vcs.modified.fade(.94),
     border: vcs.modified.fade(.8)
   },
   guide: {
