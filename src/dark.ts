@@ -5,7 +5,7 @@ const common = {
   accent: _('E6B450'),
   bg: _('0A0E14'),
   fg: _('B3B1AD'),
-  ui: _('3D424D')
+  ui: _('4D5566')
 }
 
 const syntax = {
@@ -30,7 +30,7 @@ const vcs = {
 }
 
 const ui = {
-  line: common.bg.darken(.13),
+  line: common.bg.darken(.2),
   panel: {
     bg: common.bg.brighten(.05),
     shadow: common.bg.darken(.2),
