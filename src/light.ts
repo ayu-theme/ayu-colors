@@ -1,11 +1,11 @@
 import color from './color'
-const _ = color('FAFAFA')
+const _ = color('F8F9FA')
 
 const common = {
   accent: _('FF9940'),
   bg: _('FAFAFA'),
-  fg: _('6C7680'),
-  ui: _('959DA6')
+  fg: _('575F66'),
+  ui: _('8A9199')
 }
 
 const syntax = {
@@ -46,8 +46,8 @@ const ui = {
     border: _('000000').fade(.82),
   },
   guide: {
-    active: common.ui.alpha(.7),
-    normal: common.ui.alpha(.3)
+    active: common.ui.alpha(.35),
+    normal: common.ui.alpha(.18)
   }
 }
 
