@@ -4,7 +4,7 @@ const _ = color('1F2430')
 const common = {
   accent: _('FFCC66'),
   bg: _('1F2430'),
-  fg: _('CBCCC6'),
+  fg: _('D9D5D2'),
   ui: _('707A8C')
 }
 
@@ -20,40 +20,47 @@ const syntax = {
   comment: _('5C6773'),
   constant: _('D4BFFF'),
   operator: _('F29E74'),
-  error: _('FF3333')
+  error: _('FF6666')
 }
 
 const vcs = {
-  added: _('A6CC70'),
-  modified: _('77A8D9'),
+  added: _('87D96C'),
+  modified: _('5CA1E6'),
   removed: _('F27983')
 }
 
-const ui = {
+const editor = {
   line: common.bg.darken(.15),
-  panel: {
-    bg: common.bg.brighten(.1),
-    shadow: common.bg.darken(.3),
-    border: common.bg.darken(.4)
-  },
   gutter: {
-    normal: common.ui.alpha(.4),
-    active: common.ui.alpha(.8)
+    active: common.ui.alpha(.8),
+    normal: common.ui.alpha(.4)
   },
   selection: {
-    bg: _('7399E6').fade(.87),
-    inactive: _('96B0E6').fade(.93),
-    border: _('96B0E6').fade(.93)
+    active: _('3388FF').alpha(.25),
+    inactive: _('3388FF').alpha(.13)
   },
-  guide: {
+  indentGuide: {
     active: common.ui.alpha(.7),
     normal: common.ui.alpha(.3)
+  }
+}
+
+const ui = {
+  line: common.bg.darken(.2),
+  panel: {
+    bg: common.bg.brighten(.1),
+    shadow: common.bg.darken(.3)
+  },
+  selection: {
+    active: editor.selection.active,
+    normal: common.ui.alpha(.1)
   }
 }
 
 export default {
   common,
   syntax,
+  editor,
   ui,
   vcs
 }

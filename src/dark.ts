@@ -20,40 +20,47 @@ const syntax = {
   comment: _('626A73'),
   constant: _('FFEE99'),
   operator: _('F29668'),
-  error: _('FF3333')
+  error: _('F24949')
 }
 
 const vcs = {
-  added: _('91B362'),
+  added: _('99CC66'),
   modified: _('6994BF'),
   removed: _('D96C75')
+}
+
+const editor = {
+  line: common.bg.darken(.2),
+  gutter: {
+    active: common.ui.alpha(.9),
+    normal: common.ui.alpha(.6)
+  },
+  selection: {
+    active: vcs.modified.fade(.87),
+    inactive: vcs.modified.fade(.94)
+  },
+  indentGuide: {
+    normal: common.ui.alpha(.4),
+    active: common.ui.alpha(.7)
+  }
 }
 
 const ui = {
   line: common.bg.darken(.2),
   panel: {
     bg: common.bg.brighten(.05),
-    shadow: common.bg.darken(.2),
-    border: common.bg.darken(.8)
-  },
-  gutter: {
-    normal: common.ui.alpha(.6),
-    active: common.ui.alpha(.9)
+    shadow: common.bg.darken(.2)
   },
   selection: {
-    bg: vcs.modified.fade(.87),
-    inactive: vcs.modified.fade(.94),
-    border: vcs.modified.fade(.8)
-  },
-  guide: {
-    normal: common.ui.alpha(.4),
-    active: common.ui.alpha(.7)
+    active: _('2EA8E6').fade(.7),
+    normal: _('000000').fade(.87)
   }
 }
 
 export default {
   common,
   syntax,
+  editor,
   ui,
   vcs
 }
