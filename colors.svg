@@ -10,7 +10,7 @@
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>
       <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="#575f66">Light</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="#d9d5d2">Mirage</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="#cccac2">Mirage</text>
       <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="#b3b1ad">Dark</text>
     </g>
 
@@ -43,14 +43,14 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="10.8em" rx="2" ry="2" fill="#575f66" />
-				<rect height="1.8em" width="20%" x="52.5%" y="10.8em" rx="2" ry="2" fill="#d9d5d2" />
+				<rect height="1.8em" width="20%" x="52.5%" y="10.8em" rx="2" ry="2" fill="#cccac2" />
 				<rect height="1.8em" width="20%" x="77.5%" y="10.8em" rx="2" ry="2" fill="#b3b1ad" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="13em" x="12.5%" fill="333333">common.fg</text>
 				<text y="13em" x="37.5%" fill="#ffffff">#575F66</text>
-				<text y="13em" x="62.5%" fill="#000000">#D9D5D2</text>
+				<text y="13em" x="62.5%" fill="#000000">#CCCAC2</text>
 				<text y="13em" x="87.5%" fill="#000000">#B3B1AD</text>
 			</g>
 		
@@ -82,14 +82,14 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="19.8em" rx="2" ry="2" fill="#f2ae49" />
-				<rect height="1.8em" width="20%" x="52.5%" y="19.8em" rx="2" ry="2" fill="#ffd580" />
+				<rect height="1.8em" width="20%" x="52.5%" y="19.8em" rx="2" ry="2" fill="#ffd173" />
 				<rect height="1.8em" width="20%" x="77.5%" y="19.8em" rx="2" ry="2" fill="#ffb454" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="22.75em" x="12.5%" fill="333333">syntax.func</text>
 				<text y="22.75em" x="37.5%" fill="#000000">#F2AE49</text>
-				<text y="22.75em" x="62.5%" fill="#000000">#FFD580</text>
+				<text y="22.75em" x="62.5%" fill="#000000">#FFD173</text>
 				<text y="22.75em" x="87.5%" fill="#000000">#FFB454</text>
 			</g>
 		
@@ -108,14 +108,14 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="25.8em" rx="2" ry="2" fill="#86b300" />
-				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#bae67e" />
+				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#d5ff80" />
 				<rect height="1.8em" width="20%" x="77.5%" y="25.8em" rx="2" ry="2" fill="#c2d94c" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="29.25em" x="12.5%" fill="333333">syntax.string</text>
 				<text y="29.25em" x="37.5%" fill="#000000">#86B300</text>
-				<text y="29.25em" x="62.5%" fill="#000000">#BAE67E</text>
+				<text y="29.25em" x="62.5%" fill="#000000">#D5FF80</text>
 				<text y="29.25em" x="87.5%" fill="#000000">#C2D94C</text>
 			</g>
 		
@@ -147,14 +147,14 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="34.8em" rx="2" ry="2" fill="#fa8d3e" />
-				<rect height="1.8em" width="20%" x="52.5%" y="34.8em" rx="2" ry="2" fill="#ffa759" />
+				<rect height="1.8em" width="20%" x="52.5%" y="34.8em" rx="2" ry="2" fill="#ffad66" />
 				<rect height="1.8em" width="20%" x="77.5%" y="34.8em" rx="2" ry="2" fill="#ff8f40" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="39em" x="12.5%" fill="333333">syntax.keyword</text>
 				<text y="39em" x="37.5%" fill="#000000">#FA8D3E</text>
-				<text y="39em" x="62.5%" fill="#000000">#FFA759</text>
+				<text y="39em" x="62.5%" fill="#000000">#FFAD66</text>
 				<text y="39em" x="87.5%" fill="#000000">#FF8F40</text>
 			</g>
 		

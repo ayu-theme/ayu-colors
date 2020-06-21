@@ -4,18 +4,18 @@ const _ = color('1F2430')
 const common = {
   accent: _('FFCC66'),
   bg: _('1F2430'),
-  fg: _('D9D5D2'),
+  fg: _('CCCAC2'),
   ui: _('707A8C')
 }
 
 const syntax = {
   tag: _('5CCFE6'),
-  func: _('FFD580'),
+  func: _('FFD173'),
   entity: _('73D0FF'),
-  string: _('BAE67E'),
+  string: _('D5FF80'),
   regexp: _('95E6CB'),
   markup: _('F28779'),
-  keyword: _('FFA759'),
+  keyword: _('FFAD66'),
   special: _('FFE6B3'),
   comment: _('5C6773'),
   constant: _('D4BFFF'),
