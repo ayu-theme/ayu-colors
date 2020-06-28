@@ -4,8 +4,8 @@ const _ = color('0A0E14')
 const common = {
   accent: _('E6B450'),
   bg: _('0A0E14'),
-  fg: _('B3B1AD'),
-  ui: _('4D5566')
+  fg: _('BFBDB6'),
+  ui: _('626773')
 }
 
 const syntax = {
@@ -17,10 +17,10 @@ const syntax = {
   markup: _('F07178'),
   keyword: _('FF8F40'),
   special: _('E6B673'),
-  comment: _('626A73'),
-  constant: _('FFEE99'),
+  comment: _('ACB6BF').alpha(.55),
+  constant: _('C3A6FF'),
   operator: _('F29668'),
-  error: _('F24949')
+  error: _('D95757')
 }
 
 const vcs = {
@@ -30,18 +30,18 @@ const vcs = {
 }
 
 const editor = {
-  line: common.bg.darken(.2),
+  line: common.bg.darken(.1),
   gutter: {
     active: common.ui.alpha(.9),
     normal: common.ui.alpha(.6)
   },
   selection: {
-    active: vcs.modified.fade(.87),
-    inactive: vcs.modified.fade(.94)
+    active: _('409FFF').alpha(.3),
+    inactive: _('409FFF').alpha(.13)
   },
   findMatch: {
-    active: _('FFC34D'),
-    inactive: _('FFE666').alpha(.4)
+    active: _('806A00'),
+    inactive: _('806A00').alpha(.4)
   },
   indentGuide: {
     normal: common.ui.alpha(.4),
@@ -50,14 +50,14 @@ const editor = {
 }
 
 const ui = {
-  line: common.bg.darken(.2),
+  line: common.bg.darken(.3),
   panel: {
     bg: common.bg.brighten(.05),
     shadow: common.bg.darken(.2)
   },
   selection: {
-    active: _('2EA8E6').fade(.7),
-    normal: _('000000').fade(.87)
+    active: editor.selection.active,
+    normal: common.ui.alpha(.1)
   }
 }
 
