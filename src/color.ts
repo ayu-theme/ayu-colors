@@ -17,10 +17,16 @@ export class Color {
     if (type != 'blend') return this.color.hex(type)
 
     const alpha: number = this.color.alpha() as any
-    return this.alpha(1).fade(1 - alpha).hex()
+    return this.forceAlpha(1).fade(1 - alpha).hex()
   }
 
   alpha(value: number) {
+    const alpha: number = this.color.alpha() as any
+    if (alpha === 1) return this.forceAlpha(value)
+    return new Color(this.base, this.forceAlpha(1).fade(1 - alpha).color.alpha(value))
+  }
+
+  forceAlpha(value: number) {
     return new Color(this.base, this.color.alpha(value))
   }
 

@@ -17,7 +17,7 @@ const syntax = {
   markup: _('F28779'),
   keyword: _('FFAD66'),
   special: _('FFE6B3'),
-  comment: _('5C6773'),
+  comment: _('B8CFE6').alpha(.5),
   constant: _('D4BFFF'),
   operator: _('F29E74'),
   error: _('FF6666')
@@ -25,7 +25,7 @@ const syntax = {
 
 const vcs = {
   added: _('87D96C'),
-  modified: _('5CA1E6'),
+  modified: _('80BFFF'),
   removed: _('F27983')
 }
 
@@ -36,8 +36,12 @@ const editor = {
     normal: common.ui.alpha(.4)
   },
   selection: {
-    active: _('3388FF').alpha(.25),
-    inactive: _('3388FF').alpha(.13)
+    active: _('409FFF').alpha(.25),
+    inactive: _('409FFF').alpha(.13)
+  },
+  findMatch: {
+    active: _('806A00'),
+    inactive: _('806A00').alpha(.4)
   },
   indentGuide: {
     active: common.ui.alpha(.7),

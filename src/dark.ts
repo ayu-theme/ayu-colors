@@ -39,6 +39,10 @@ const editor = {
     active: vcs.modified.fade(.87),
     inactive: vcs.modified.fade(.94)
   },
+  findMatch: {
+    active: _('FFC34D'),
+    inactive: _('FFE666').alpha(.4)
+  },
   indentGuide: {
     normal: common.ui.alpha(.4),
     active: common.ui.alpha(.7)
