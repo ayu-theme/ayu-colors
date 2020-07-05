@@ -5,7 +5,7 @@ const common = {
   accent: _('E6B450'),
   bg: _('0A0E14'),
   fg: _('BFBDB6'),
-  ui: _('626773')
+  ui: _('6C7380')
 }
 
 const syntax = {
@@ -24,9 +24,9 @@ const syntax = {
 }
 
 const vcs = {
-  added: _('99CC66'),
-  modified: _('6994BF'),
-  removed: _('D96C75')
+  added: _('7FD962'),
+  modified: _('73B8FF'),
+  removed: _('F26D78')
 }
 
 const editor = {
