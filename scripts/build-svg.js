@@ -62,15 +62,15 @@ colorSVG = `<?xml version="1.0" standalone="no" ?>
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg width="100%" height="${index * 3}em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
     <g>
-      <rect height="${index * 3}em" width="25%" x="25%" fill="${colors.light.common.bg.hex()}" />
-      <rect height="${index * 3}em" width="25%" x="50%" fill="${colors.mirage.common.bg.hex()}" />
-      <rect height="${index * 3}em" width="25%" x="75%" fill="${colors.dark.common.bg.hex()}" />
+      <rect height="${index * 3}em" width="25%" x="25%" fill="${colors.light.ui.bg.hex()}" />
+      <rect height="${index * 3}em" width="25%" x="50%" fill="${colors.mirage.ui.bg.hex()}" />
+      <rect height="${index * 3}em" width="25%" x="75%" fill="${colors.dark.ui.bg.hex()}" />
     </g>
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="${colors.light.common.fg.hex()}">Light</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="${colors.mirage.common.fg.hex()}">Mirage</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="${colors.dark.common.fg.hex()}">Dark</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="${colors.light.ui.fg.hex()}">Light</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="${colors.mirage.ui.fg.hex()}">Mirage</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="${colors.dark.ui.fg.hex()}">Dark</text>
     </g>
 
     ${colorSVG}
