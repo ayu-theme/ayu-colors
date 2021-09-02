@@ -1,6 +1,6 @@
 {
   "name": "ayu",
-  "version": "7.3.1",
+  "version": "7.3.2",
   "description": "The ayu sublime theme as a color palette",
   "main": "dist/colors.js",
   "types": "dist/colors.d.ts",
