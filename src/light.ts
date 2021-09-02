@@ -1,59 +1,70 @@
-import color from './color'
-const _ = color('F8F9FA')
-
-const common = {
-  accent: _('FF9940'),
-  bg: _('FAFAFA'),
-  fg: _('575F66'),
-  ui: _('8A9199')
-}
+import _ from './color'
 
 const syntax = {
-  tag: _('55B4D4'),
-  func: _('F2AE49'),
-  entity: _('399EE6'),
-  string: _('86B300'),
-  regexp: _('4CBF99'),
-  markup: _('F07171'),
-  keyword: _('FA8D3E'),
-  special: _('E6BA7E'),
-  comment: _('ABB0B6'),
-  constant: _('A37ACC'),
-  operator: _('ED9366'),
-  error: _('F51818')
+  tag: _`55B4D4`,
+  func: _`F2AE49`,
+  entity: _`399EE6`,
+  string: _`86B300`,
+  regexp: _`4CBF99`,
+  markup: _`F07171`,
+  keyword: _`FA8D3E`,
+  special: _`E6BA7E`,
+  comment: _`787B80`.alpha(.6),
+  constant: _`A37ACC`,
+  operator: _`ED9366`
 }
 
 const vcs = {
-  added: _('99BF4D'),
-  modified: _('709ECC'),
-  removed: _('F27983')
+  added: _`6CBF43`,
+  modified: _`478ACC`,
+  removed: _`FF7383`
 }
 
-const ui = {
-  line: common.ui.alpha(.1),
-  panel: {
-    bg: common.bg.brighten(.1),
-    shadow: common.fg.darken(.5).alpha(.25),
-    border: common.bg.darken(.2)
+const editor = {
+  fg: _`505559`,
+  bg: _`FCFCFC`,
+  line: _`8A9199`.alpha(.1),
+  selection: {
+    active: _`035BD6`.alpha(.15),
+    inactive: _`035BD6`.alpha(.07)
+  },
+  findMatch: {
+    active: _`ECD9FF`,
+    inactive: _`ECD9FF`.alpha(.45)
   },
   gutter: {
-    normal: common.ui.alpha(.4),
-    active: common.ui.alpha(.8)
+    active: _`8A9199`.alpha(.8),
+    normal: _`8A9199`.alpha(.4)
   },
-  selection: {
-    bg: _('2EA8E6').fade(.7),
-    inactive: _('000000').fade(.87),
-    border: _('000000').fade(.82),
-  },
-  guide: {
-    active: common.ui.alpha(.35),
-    normal: common.ui.alpha(.18)
+  indentGuide: {
+    active: _`8A9199`.alpha(.35),
+    normal: _`8A9199`.alpha(.18)
   }
 }
 
+const ui = {
+  fg: _`8A9199`,
+  bg: _`F8F9FA`,
+  line: _`6B7D8F`.alpha(.12),
+  selection: {
+    active: _`56728F`.alpha(.12),
+    normal: _`6B7D8F`.alpha(.12)
+  },
+  panel: {
+    bg: _`F3F4F5`,
+    shadow: _`000000`.alpha(.15)
+  },
+}
+
+const common = {
+  accent: _`FFAA33`,
+  error: _`E65050`
+}
+
 export default {
-  common,
   syntax,
+  vcs,
+  editor,
   ui,
-  vcs
+  common
 }

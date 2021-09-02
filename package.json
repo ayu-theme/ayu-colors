@@ -31,8 +31,8 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "@types/chroma-js": "^1.4.1",
-    "chroma-js": "^2.0.3",
+    "@types/chroma-js": "^2.0.0",
+    "chroma-js": "^2.1.0",
     "nonenumerable": "^1.1.1"
   }
 }

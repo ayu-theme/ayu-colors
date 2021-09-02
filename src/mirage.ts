@@ -1,59 +1,70 @@
-import color from './color'
-const _ = color('1F2430')
-
-const common = {
-  accent: _('FFCC66'),
-  bg: _('1F2430'),
-  fg: _('CBCCC6'),
-  ui: _('707A8C')
-}
+import _ from './color'
 
 const syntax = {
-  tag: _('5CCFE6'),
-  func: _('FFD580'),
-  entity: _('73D0FF'),
-  string: _('BAE67E'),
-  regexp: _('95E6CB'),
-  markup: _('F28779'),
-  keyword: _('FFA759'),
-  special: _('FFE6B3'),
-  comment: _('5C6773'),
-  constant: _('D4BFFF'),
-  operator: _('F29E74'),
-  error: _('FF3333')
+  tag: _`5CCFE6`,
+  func: _`FFD173`,
+  entity: _`73D0FF`,
+  string: _`D5FF80`,
+  regexp: _`95E6CB`,
+  markup: _`F28779`,
+  keyword: _`FFAD66`,
+  special: _`FFE6B3`,
+  comment: _`B8CFE6`.alpha(.5),
+  constant: _`D4BFFF`,
+  operator: _`F29E74`
 }
 
 const vcs = {
-  added: _('A6CC70'),
-  modified: _('77A8D9'),
-  removed: _('F27983')
+  added: _`87D96C`,
+  modified: _`80BFFF`,
+  removed: _`F27983`
 }
 
-const ui = {
-  line: common.bg.darken(.15),
-  panel: {
-    bg: common.bg.brighten(.1),
-    shadow: common.bg.darken(.3),
-    border: common.bg.darken(.4)
+const editor = {
+  fg: _`CCCAC2`,
+  bg: _`242936`,
+  line: _`1A1F29`,
+  selection: {
+    active: _`409FFF`.alpha(.25),
+    inactive: _`409FFF`.alpha(.13)
+  },
+  findMatch: {
+    active: _`695380`,
+    inactive: _`695380`.alpha(.4)
   },
   gutter: {
-    normal: common.ui.alpha(.4),
-    active: common.ui.alpha(.8)
+    active: _`8A9199`.alpha(.8),
+    normal: _`8A9199`.alpha(.4)
   },
-  selection: {
-    bg: _('7399E6').fade(.87),
-    inactive: _('96B0E6').fade(.93),
-    border: _('96B0E6').fade(.93)
-  },
-  guide: {
-    active: common.ui.alpha(.7),
-    normal: common.ui.alpha(.3)
+  indentGuide: {
+    active: _`8A9199`.alpha(.35),
+    normal: _`8A9199`.alpha(.18)
   }
 }
 
+const ui = {
+  fg: _`707A8C`,
+  bg: _`1F2430`,
+  line: _`171B24`,
+  selection: {
+    active: _`637599`.alpha(.15),
+    normal: _`69758C`.alpha(.12)
+  },
+  panel: {
+    bg: _`1C212B`,
+    shadow: _`12151C`.alpha(.7)
+  },
+}
+
+const common = {
+  accent: _`FFCC66`,
+  error: _`FF6666`
+}
+
 export default {
-  common,
   syntax,
+  vcs,
+  editor,
   ui,
-  vcs
+  common
 }

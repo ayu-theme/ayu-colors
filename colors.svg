@@ -1,408 +1,460 @@
 <?xml version="1.0" standalone="no" ?>
   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-  <svg width="100%" height="96em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
+  <svg width="100%" height="108em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="monospace" text-anchor="middle">
     <g>
-      <rect height="96em" width="25%" x="25%" fill="#fafafa" />
-      <rect height="96em" width="25%" x="50%" fill="#1f2430" />
-      <rect height="96em" width="25%" x="75%" fill="#0a0e14" />
+      <rect height="108em" width="25%" x="25%" fill="#f8f9fa" />
+      <rect height="108em" width="25%" x="50%" fill="#1f2430" />
+      <rect height="108em" width="25%" x="75%" fill="#0b0e14" />
     </g>
     <g font-weight="bold">
       <text font-family="sans-serif" font-size="13" y="3em" x="12.5%" fill="#333333">Path</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="#575f66">Light</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="#cbccc6">Mirage</text>
-      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="#b3b1ad">Dark</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="37.5%" fill="#8a9199">Light</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="62.5%" fill="#707a8c">Mirage</text>
+      <text font-family="sans-serif" font-size="13" y="3em" x="87.5%" fill="#565b66">Dark</text>
     </g>
 
     
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="4.8em" rx="2" ry="2" fill="#ff9940" />
-				<rect height="1.8em" width="20%" x="52.5%" y="4.8em" rx="2" ry="2" fill="#ffcc66" />
-				<rect height="1.8em" width="20%" x="77.5%" y="4.8em" rx="2" ry="2" fill="#e6b450" />
+				<rect height="1.8em" width="20%" x="27.5%" y="4.8em" rx="2" ry="2" fill="#55b4d4" />
+				<rect height="1.8em" width="20%" x="52.5%" y="4.8em" rx="2" ry="2" fill="#5ccfe6" />
+				<rect height="1.8em" width="20%" x="77.5%" y="4.8em" rx="2" ry="2" fill="#39bae6" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="6.5em" x="12.5%" fill="333333">common.accent</text>
-				<text y="6.5em" x="37.5%" fill="#000000">#FF9940</text>
-				<text y="6.5em" x="62.5%" fill="#000000">#FFCC66</text>
-				<text y="6.5em" x="87.5%" fill="#000000">#E6B450</text>
+				<text y="6.5em" x="12.5%" fill="333333">syntax.tag</text>
+				<text y="6.5em" x="37.5%" fill="#000000">#55B4D4</text>
+				<text y="6.5em" x="62.5%" fill="#000000">#5CCFE6</text>
+				<text y="6.5em" x="87.5%" fill="#000000">#39BAE6</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="7.8em" rx="2" ry="2" fill="#fafafa" />
-				<rect height="1.8em" width="20%" x="52.5%" y="7.8em" rx="2" ry="2" fill="#1f2430" />
-				<rect height="1.8em" width="20%" x="77.5%" y="7.8em" rx="2" ry="2" fill="#0a0e14" />
+				<rect height="1.8em" width="20%" x="27.5%" y="7.8em" rx="2" ry="2" fill="#f2ae49" />
+				<rect height="1.8em" width="20%" x="52.5%" y="7.8em" rx="2" ry="2" fill="#ffd173" />
+				<rect height="1.8em" width="20%" x="77.5%" y="7.8em" rx="2" ry="2" fill="#ffb454" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="9.75em" x="12.5%" fill="333333">common.bg</text>
-				<text y="9.75em" x="37.5%" fill="#000000">#FAFAFA</text>
-				<text y="9.75em" x="62.5%" fill="#ffffff">#1F2430</text>
-				<text y="9.75em" x="87.5%" fill="#ffffff">#0A0E14</text>
+				<text y="9.75em" x="12.5%" fill="333333">syntax.func</text>
+				<text y="9.75em" x="37.5%" fill="#000000">#F2AE49</text>
+				<text y="9.75em" x="62.5%" fill="#000000">#FFD173</text>
+				<text y="9.75em" x="87.5%" fill="#000000">#FFB454</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="10.8em" rx="2" ry="2" fill="#575f66" />
-				<rect height="1.8em" width="20%" x="52.5%" y="10.8em" rx="2" ry="2" fill="#cbccc6" />
-				<rect height="1.8em" width="20%" x="77.5%" y="10.8em" rx="2" ry="2" fill="#b3b1ad" />
+				<rect height="1.8em" width="20%" x="27.5%" y="10.8em" rx="2" ry="2" fill="#399ee6" />
+				<rect height="1.8em" width="20%" x="52.5%" y="10.8em" rx="2" ry="2" fill="#73d0ff" />
+				<rect height="1.8em" width="20%" x="77.5%" y="10.8em" rx="2" ry="2" fill="#59c2ff" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="13em" x="12.5%" fill="333333">common.fg</text>
-				<text y="13em" x="37.5%" fill="#ffffff">#575F66</text>
-				<text y="13em" x="62.5%" fill="#000000">#CBCCC6</text>
-				<text y="13em" x="87.5%" fill="#000000">#B3B1AD</text>
+				<text y="13em" x="12.5%" fill="333333">syntax.entity</text>
+				<text y="13em" x="37.5%" fill="#000000">#399EE6</text>
+				<text y="13em" x="62.5%" fill="#000000">#73D0FF</text>
+				<text y="13em" x="87.5%" fill="#000000">#59C2FF</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="13.8em" rx="2" ry="2" fill="#8a9199" />
-				<rect height="1.8em" width="20%" x="52.5%" y="13.8em" rx="2" ry="2" fill="#707a8c" />
-				<rect height="1.8em" width="20%" x="77.5%" y="13.8em" rx="2" ry="2" fill="#4d5566" />
+				<rect height="1.8em" width="20%" x="27.5%" y="13.8em" rx="2" ry="2" fill="#86b300" />
+				<rect height="1.8em" width="20%" x="52.5%" y="13.8em" rx="2" ry="2" fill="#d5ff80" />
+				<rect height="1.8em" width="20%" x="77.5%" y="13.8em" rx="2" ry="2" fill="#aad94c" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="16.25em" x="12.5%" fill="333333">common.ui</text>
-				<text y="16.25em" x="37.5%" fill="#000000">#8A9199</text>
-				<text y="16.25em" x="62.5%" fill="#ffffff">#707A8C</text>
-				<text y="16.25em" x="87.5%" fill="#ffffff">#4D5566</text>
+				<text y="16.25em" x="12.5%" fill="333333">syntax.string</text>
+				<text y="16.25em" x="37.5%" fill="#000000">#86B300</text>
+				<text y="16.25em" x="62.5%" fill="#000000">#D5FF80</text>
+				<text y="16.25em" x="87.5%" fill="#000000">#AAD94C</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="16.8em" rx="2" ry="2" fill="#55b4d4" />
-				<rect height="1.8em" width="20%" x="52.5%" y="16.8em" rx="2" ry="2" fill="#5ccfe6" />
-				<rect height="1.8em" width="20%" x="77.5%" y="16.8em" rx="2" ry="2" fill="#39bae6" />
+				<rect height="1.8em" width="20%" x="27.5%" y="16.8em" rx="2" ry="2" fill="#4cbf99" />
+				<rect height="1.8em" width="20%" x="52.5%" y="16.8em" rx="2" ry="2" fill="#95e6cb" />
+				<rect height="1.8em" width="20%" x="77.5%" y="16.8em" rx="2" ry="2" fill="#95e6cb" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="19.5em" x="12.5%" fill="333333">syntax.tag</text>
-				<text y="19.5em" x="37.5%" fill="#000000">#55B4D4</text>
-				<text y="19.5em" x="62.5%" fill="#000000">#5CCFE6</text>
-				<text y="19.5em" x="87.5%" fill="#000000">#39BAE6</text>
+				<text y="19.5em" x="12.5%" fill="333333">syntax.regexp</text>
+				<text y="19.5em" x="37.5%" fill="#000000">#4CBF99</text>
+				<text y="19.5em" x="62.5%" fill="#000000">#95E6CB</text>
+				<text y="19.5em" x="87.5%" fill="#000000">#95E6CB</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="19.8em" rx="2" ry="2" fill="#f2ae49" />
-				<rect height="1.8em" width="20%" x="52.5%" y="19.8em" rx="2" ry="2" fill="#ffd580" />
-				<rect height="1.8em" width="20%" x="77.5%" y="19.8em" rx="2" ry="2" fill="#ffb454" />
+				<rect height="1.8em" width="20%" x="27.5%" y="19.8em" rx="2" ry="2" fill="#f07171" />
+				<rect height="1.8em" width="20%" x="52.5%" y="19.8em" rx="2" ry="2" fill="#f28779" />
+				<rect height="1.8em" width="20%" x="77.5%" y="19.8em" rx="2" ry="2" fill="#f07178" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="22.75em" x="12.5%" fill="333333">syntax.func</text>
-				<text y="22.75em" x="37.5%" fill="#000000">#F2AE49</text>
-				<text y="22.75em" x="62.5%" fill="#000000">#FFD580</text>
-				<text y="22.75em" x="87.5%" fill="#000000">#FFB454</text>
+				<text y="22.75em" x="12.5%" fill="333333">syntax.markup</text>
+				<text y="22.75em" x="37.5%" fill="#000000">#F07171</text>
+				<text y="22.75em" x="62.5%" fill="#000000">#F28779</text>
+				<text y="22.75em" x="87.5%" fill="#000000">#F07178</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="22.8em" rx="2" ry="2" fill="#399ee6" />
-				<rect height="1.8em" width="20%" x="52.5%" y="22.8em" rx="2" ry="2" fill="#73d0ff" />
-				<rect height="1.8em" width="20%" x="77.5%" y="22.8em" rx="2" ry="2" fill="#59c2ff" />
+				<rect height="1.8em" width="20%" x="27.5%" y="22.8em" rx="2" ry="2" fill="#fa8d3e" />
+				<rect height="1.8em" width="20%" x="52.5%" y="22.8em" rx="2" ry="2" fill="#ffad66" />
+				<rect height="1.8em" width="20%" x="77.5%" y="22.8em" rx="2" ry="2" fill="#ff8f40" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="26em" x="12.5%" fill="333333">syntax.entity</text>
-				<text y="26em" x="37.5%" fill="#000000">#399EE6</text>
-				<text y="26em" x="62.5%" fill="#000000">#73D0FF</text>
-				<text y="26em" x="87.5%" fill="#000000">#59C2FF</text>
+				<text y="26em" x="12.5%" fill="333333">syntax.keyword</text>
+				<text y="26em" x="37.5%" fill="#000000">#FA8D3E</text>
+				<text y="26em" x="62.5%" fill="#000000">#FFAD66</text>
+				<text y="26em" x="87.5%" fill="#000000">#FF8F40</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="25.8em" rx="2" ry="2" fill="#86b300" />
-				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#bae67e" />
-				<rect height="1.8em" width="20%" x="77.5%" y="25.8em" rx="2" ry="2" fill="#c2d94c" />
+				<rect height="1.8em" width="20%" x="27.5%" y="25.8em" rx="2" ry="2" fill="#e6ba7e" />
+				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#ffe6b3" />
+				<rect height="1.8em" width="20%" x="77.5%" y="25.8em" rx="2" ry="2" fill="#e6b673" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="29.25em" x="12.5%" fill="333333">syntax.string</text>
-				<text y="29.25em" x="37.5%" fill="#000000">#86B300</text>
-				<text y="29.25em" x="62.5%" fill="#000000">#BAE67E</text>
-				<text y="29.25em" x="87.5%" fill="#000000">#C2D94C</text>
+				<text y="29.25em" x="12.5%" fill="333333">syntax.special</text>
+				<text y="29.25em" x="37.5%" fill="#000000">#E6BA7E</text>
+				<text y="29.25em" x="62.5%" fill="#000000">#FFE6B3</text>
+				<text y="29.25em" x="87.5%" fill="#000000">#E6B673</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="28.8em" rx="2" ry="2" fill="#4cbf99" />
-				<rect height="1.8em" width="20%" x="52.5%" y="28.8em" rx="2" ry="2" fill="#95e6cb" />
-				<rect height="1.8em" width="20%" x="77.5%" y="28.8em" rx="2" ry="2" fill="#95e6cb" />
+				<rect height="1.8em" width="20%" x="27.5%" y="28.8em" rx="2" ry="2" fill="#787b8099" />
+				<rect height="1.8em" width="20%" x="52.5%" y="28.8em" rx="2" ry="2" fill="#b8cfe680" />
+				<rect height="1.8em" width="20%" x="77.5%" y="28.8em" rx="2" ry="2" fill="#acb6bf8c" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="32.5em" x="12.5%" fill="333333">syntax.regexp</text>
-				<text y="32.5em" x="37.5%" fill="#000000">#4CBF99</text>
-				<text y="32.5em" x="62.5%" fill="#000000">#95E6CB</text>
-				<text y="32.5em" x="87.5%" fill="#000000">#95E6CB</text>
+				<text y="32.5em" x="12.5%" fill="333333">syntax.comment</text>
+				<text y="32.5em" x="37.5%" fill="#ffffff">#787B8099</text>
+				<text y="32.5em" x="62.5%" fill="#000000">#B8CFE680</text>
+				<text y="32.5em" x="87.5%" fill="#000000">#ACB6BF8C</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="31.8em" rx="2" ry="2" fill="#f07171" />
-				<rect height="1.8em" width="20%" x="52.5%" y="31.8em" rx="2" ry="2" fill="#f28779" />
-				<rect height="1.8em" width="20%" x="77.5%" y="31.8em" rx="2" ry="2" fill="#f07178" />
+				<rect height="1.8em" width="20%" x="27.5%" y="31.8em" rx="2" ry="2" fill="#a37acc" />
+				<rect height="1.8em" width="20%" x="52.5%" y="31.8em" rx="2" ry="2" fill="#d4bfff" />
+				<rect height="1.8em" width="20%" x="77.5%" y="31.8em" rx="2" ry="2" fill="#c3a6ff" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="35.75em" x="12.5%" fill="333333">syntax.markup</text>
-				<text y="35.75em" x="37.5%" fill="#000000">#F07171</text>
-				<text y="35.75em" x="62.5%" fill="#000000">#F28779</text>
-				<text y="35.75em" x="87.5%" fill="#000000">#F07178</text>
+				<text y="35.75em" x="12.5%" fill="333333">syntax.constant</text>
+				<text y="35.75em" x="37.5%" fill="#000000">#A37ACC</text>
+				<text y="35.75em" x="62.5%" fill="#000000">#D4BFFF</text>
+				<text y="35.75em" x="87.5%" fill="#000000">#C3A6FF</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="34.8em" rx="2" ry="2" fill="#fa8d3e" />
-				<rect height="1.8em" width="20%" x="52.5%" y="34.8em" rx="2" ry="2" fill="#ffa759" />
-				<rect height="1.8em" width="20%" x="77.5%" y="34.8em" rx="2" ry="2" fill="#ff8f40" />
+				<rect height="1.8em" width="20%" x="27.5%" y="34.8em" rx="2" ry="2" fill="#ed9366" />
+				<rect height="1.8em" width="20%" x="52.5%" y="34.8em" rx="2" ry="2" fill="#f29e74" />
+				<rect height="1.8em" width="20%" x="77.5%" y="34.8em" rx="2" ry="2" fill="#f29668" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="39em" x="12.5%" fill="333333">syntax.keyword</text>
-				<text y="39em" x="37.5%" fill="#000000">#FA8D3E</text>
-				<text y="39em" x="62.5%" fill="#000000">#FFA759</text>
-				<text y="39em" x="87.5%" fill="#000000">#FF8F40</text>
+				<text y="39em" x="12.5%" fill="333333">syntax.operator</text>
+				<text y="39em" x="37.5%" fill="#000000">#ED9366</text>
+				<text y="39em" x="62.5%" fill="#000000">#F29E74</text>
+				<text y="39em" x="87.5%" fill="#000000">#F29668</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="37.8em" rx="2" ry="2" fill="#e6ba7e" />
-				<rect height="1.8em" width="20%" x="52.5%" y="37.8em" rx="2" ry="2" fill="#ffe6b3" />
-				<rect height="1.8em" width="20%" x="77.5%" y="37.8em" rx="2" ry="2" fill="#e6b673" />
+				<rect height="1.8em" width="20%" x="27.5%" y="37.8em" rx="2" ry="2" fill="#6cbf43" />
+				<rect height="1.8em" width="20%" x="52.5%" y="37.8em" rx="2" ry="2" fill="#87d96c" />
+				<rect height="1.8em" width="20%" x="77.5%" y="37.8em" rx="2" ry="2" fill="#7fd962" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="42.25em" x="12.5%" fill="333333">syntax.special</text>
-				<text y="42.25em" x="37.5%" fill="#000000">#E6BA7E</text>
-				<text y="42.25em" x="62.5%" fill="#000000">#FFE6B3</text>
-				<text y="42.25em" x="87.5%" fill="#000000">#E6B673</text>
+				<text y="42.25em" x="12.5%" fill="333333">vcs.added</text>
+				<text y="42.25em" x="37.5%" fill="#000000">#6CBF43</text>
+				<text y="42.25em" x="62.5%" fill="#000000">#87D96C</text>
+				<text y="42.25em" x="87.5%" fill="#000000">#7FD962</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="40.8em" rx="2" ry="2" fill="#abb0b6" />
-				<rect height="1.8em" width="20%" x="52.5%" y="40.8em" rx="2" ry="2" fill="#5c6773" />
-				<rect height="1.8em" width="20%" x="77.5%" y="40.8em" rx="2" ry="2" fill="#626a73" />
+				<rect height="1.8em" width="20%" x="27.5%" y="40.8em" rx="2" ry="2" fill="#478acc" />
+				<rect height="1.8em" width="20%" x="52.5%" y="40.8em" rx="2" ry="2" fill="#80bfff" />
+				<rect height="1.8em" width="20%" x="77.5%" y="40.8em" rx="2" ry="2" fill="#73b8ff" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="45.5em" x="12.5%" fill="333333">syntax.comment</text>
-				<text y="45.5em" x="37.5%" fill="#000000">#ABB0B6</text>
-				<text y="45.5em" x="62.5%" fill="#ffffff">#5C6773</text>
-				<text y="45.5em" x="87.5%" fill="#ffffff">#626A73</text>
+				<text y="45.5em" x="12.5%" fill="333333">vcs.modified</text>
+				<text y="45.5em" x="37.5%" fill="#000000">#478ACC</text>
+				<text y="45.5em" x="62.5%" fill="#000000">#80BFFF</text>
+				<text y="45.5em" x="87.5%" fill="#000000">#73B8FF</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="43.8em" rx="2" ry="2" fill="#a37acc" />
-				<rect height="1.8em" width="20%" x="52.5%" y="43.8em" rx="2" ry="2" fill="#d4bfff" />
-				<rect height="1.8em" width="20%" x="77.5%" y="43.8em" rx="2" ry="2" fill="#ffee99" />
+				<rect height="1.8em" width="20%" x="27.5%" y="43.8em" rx="2" ry="2" fill="#ff7383" />
+				<rect height="1.8em" width="20%" x="52.5%" y="43.8em" rx="2" ry="2" fill="#f27983" />
+				<rect height="1.8em" width="20%" x="77.5%" y="43.8em" rx="2" ry="2" fill="#f26d78" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="48.75em" x="12.5%" fill="333333">syntax.constant</text>
-				<text y="48.75em" x="37.5%" fill="#000000">#A37ACC</text>
-				<text y="48.75em" x="62.5%" fill="#000000">#D4BFFF</text>
-				<text y="48.75em" x="87.5%" fill="#000000">#FFEE99</text>
+				<text y="48.75em" x="12.5%" fill="333333">vcs.removed</text>
+				<text y="48.75em" x="37.5%" fill="#000000">#FF7383</text>
+				<text y="48.75em" x="62.5%" fill="#000000">#F27983</text>
+				<text y="48.75em" x="87.5%" fill="#000000">#F26D78</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="46.8em" rx="2" ry="2" fill="#ed9366" />
-				<rect height="1.8em" width="20%" x="52.5%" y="46.8em" rx="2" ry="2" fill="#f29e74" />
-				<rect height="1.8em" width="20%" x="77.5%" y="46.8em" rx="2" ry="2" fill="#f29668" />
+				<rect height="1.8em" width="20%" x="27.5%" y="46.8em" rx="2" ry="2" fill="#505559" />
+				<rect height="1.8em" width="20%" x="52.5%" y="46.8em" rx="2" ry="2" fill="#cccac2" />
+				<rect height="1.8em" width="20%" x="77.5%" y="46.8em" rx="2" ry="2" fill="#bfbdb6" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="52em" x="12.5%" fill="333333">syntax.operator</text>
-				<text y="52em" x="37.5%" fill="#000000">#ED9366</text>
-				<text y="52em" x="62.5%" fill="#000000">#F29E74</text>
-				<text y="52em" x="87.5%" fill="#000000">#F29668</text>
+				<text y="52em" x="12.5%" fill="333333">editor.fg</text>
+				<text y="52em" x="37.5%" fill="#ffffff">#505559</text>
+				<text y="52em" x="62.5%" fill="#000000">#CCCAC2</text>
+				<text y="52em" x="87.5%" fill="#000000">#BFBDB6</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="49.8em" rx="2" ry="2" fill="#f51818" />
-				<rect height="1.8em" width="20%" x="52.5%" y="49.8em" rx="2" ry="2" fill="#ff3333" />
-				<rect height="1.8em" width="20%" x="77.5%" y="49.8em" rx="2" ry="2" fill="#ff3333" />
+				<rect height="1.8em" width="20%" x="27.5%" y="49.8em" rx="2" ry="2" fill="#fcfcfc" />
+				<rect height="1.8em" width="20%" x="52.5%" y="49.8em" rx="2" ry="2" fill="#242936" />
+				<rect height="1.8em" width="20%" x="77.5%" y="49.8em" rx="2" ry="2" fill="#0d1017" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="55.25em" x="12.5%" fill="333333">syntax.error</text>
-				<text y="55.25em" x="37.5%" fill="#ffffff">#F51818</text>
-				<text y="55.25em" x="62.5%" fill="#000000">#FF3333</text>
-				<text y="55.25em" x="87.5%" fill="#000000">#FF3333</text>
+				<text y="55.25em" x="12.5%" fill="333333">editor.bg</text>
+				<text y="55.25em" x="37.5%" fill="#000000">#FCFCFC</text>
+				<text y="55.25em" x="62.5%" fill="#ffffff">#242936</text>
+				<text y="55.25em" x="87.5%" fill="#ffffff">#0D1017</text>
 			</g>
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="52.8em" rx="2" ry="2" fill="#8a91991a" />
-				<rect height="1.8em" width="20%" x="52.5%" y="52.8em" rx="2" ry="2" fill="#191e2a" />
-				<rect height="1.8em" width="20%" x="77.5%" y="52.8em" rx="2" ry="2" fill="#00010a" />
+				<rect height="1.8em" width="20%" x="52.5%" y="52.8em" rx="2" ry="2" fill="#1a1f29" />
+				<rect height="1.8em" width="20%" x="77.5%" y="52.8em" rx="2" ry="2" fill="#131721" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="58.5em" x="12.5%" fill="333333">ui.line</text>
+				<text y="58.5em" x="12.5%" fill="333333">editor.line</text>
 				<text y="58.5em" x="37.5%" fill="#000000">#8A91991A</text>
-				<text y="58.5em" x="62.5%" fill="#ffffff">#191E2A</text>
-				<text y="58.5em" x="87.5%" fill="#ffffff">#00010A</text>
+				<text y="58.5em" x="62.5%" fill="#ffffff">#1A1F29</text>
+				<text y="58.5em" x="87.5%" fill="#ffffff">#131721</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="55.8em" rx="2" ry="2" fill="#ffffff" />
-				<rect height="1.8em" width="20%" x="52.5%" y="55.8em" rx="2" ry="2" fill="#232834" />
-				<rect height="1.8em" width="20%" x="77.5%" y="55.8em" rx="2" ry="2" fill="#0d1016" />
+				<rect height="1.8em" width="20%" x="27.5%" y="55.8em" rx="2" ry="2" fill="#035bd626" />
+				<rect height="1.8em" width="20%" x="52.5%" y="55.8em" rx="2" ry="2" fill="#409fff40" />
+				<rect height="1.8em" width="20%" x="77.5%" y="55.8em" rx="2" ry="2" fill="#409fff4d" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="61.75em" x="12.5%" fill="333333">ui.panel.bg</text>
-				<text y="61.75em" x="37.5%" fill="#000000">#FFFFFF</text>
-				<text y="61.75em" x="62.5%" fill="#ffffff">#232834</text>
-				<text y="61.75em" x="87.5%" fill="#ffffff">#0D1016</text>
+				<text y="61.75em" x="12.5%" fill="333333">editor.selection.active</text>
+				<text y="61.75em" x="37.5%" fill="#ffffff">#035BD626</text>
+				<text y="61.75em" x="62.5%" fill="#000000">#409FFF40</text>
+				<text y="61.75em" x="87.5%" fill="#000000">#409FFF4D</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="58.8em" rx="2" ry="2" fill="#424a5040" />
-				<rect height="1.8em" width="20%" x="52.5%" y="58.8em" rx="2" ry="2" fill="#141925" />
-				<rect height="1.8em" width="20%" x="77.5%" y="58.8em" rx="2" ry="2" fill="#00010a" />
+				<rect height="1.8em" width="20%" x="27.5%" y="58.8em" rx="2" ry="2" fill="#035bd612" />
+				<rect height="1.8em" width="20%" x="52.5%" y="58.8em" rx="2" ry="2" fill="#409fff21" />
+				<rect height="1.8em" width="20%" x="77.5%" y="58.8em" rx="2" ry="2" fill="#409fff21" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="65em" x="12.5%" fill="333333">ui.panel.shadow</text>
-				<text y="65em" x="37.5%" fill="#ffffff">#424A5040</text>
-				<text y="65em" x="62.5%" fill="#ffffff">#141925</text>
-				<text y="65em" x="87.5%" fill="#ffffff">#00010A</text>
+				<text y="65em" x="12.5%" fill="333333">editor.selection.inactive</text>
+				<text y="65em" x="37.5%" fill="#ffffff">#035BD612</text>
+				<text y="65em" x="62.5%" fill="#000000">#409FFF21</text>
+				<text y="65em" x="87.5%" fill="#000000">#409FFF21</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="2" ry="2" fill="#f0f0f0" />
-				<rect height="1.8em" width="20%" x="52.5%" y="61.8em" rx="2" ry="2" fill="#101521" />
-				<rect height="1.8em" width="20%" x="77.5%" y="61.8em" rx="2" ry="2" fill="#000000" />
+				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="2" ry="2" fill="#ecd9ff" />
+				<rect height="1.8em" width="20%" x="52.5%" y="61.8em" rx="2" ry="2" fill="#695380" />
+				<rect height="1.8em" width="20%" x="77.5%" y="61.8em" rx="2" ry="2" fill="#6c5980" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="68.25em" x="12.5%" fill="333333">ui.panel.border</text>
-				<text y="68.25em" x="37.5%" fill="#000000">#F0F0F0</text>
-				<text y="68.25em" x="62.5%" fill="#ffffff">#101521</text>
-				<text y="68.25em" x="87.5%" fill="#ffffff">#000000</text>
+				<text y="68.25em" x="12.5%" fill="333333">editor.findMatch.active</text>
+				<text y="68.25em" x="37.5%" fill="#000000">#ECD9FF</text>
+				<text y="68.25em" x="62.5%" fill="#ffffff">#695380</text>
+				<text y="68.25em" x="87.5%" fill="#ffffff">#6C5980</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="64.8em" rx="2" ry="2" fill="#8a919966" />
-				<rect height="1.8em" width="20%" x="52.5%" y="64.8em" rx="2" ry="2" fill="#707a8c66" />
-				<rect height="1.8em" width="20%" x="77.5%" y="64.8em" rx="2" ry="2" fill="#4d556699" />
+				<rect height="1.8em" width="20%" x="27.5%" y="64.8em" rx="2" ry="2" fill="#ecd9ff73" />
+				<rect height="1.8em" width="20%" x="52.5%" y="64.8em" rx="2" ry="2" fill="#69538066" />
+				<rect height="1.8em" width="20%" x="77.5%" y="64.8em" rx="2" ry="2" fill="#6c598066" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="71.5em" x="12.5%" fill="333333">ui.gutter.normal</text>
-				<text y="71.5em" x="37.5%" fill="#000000">#8A919966</text>
-				<text y="71.5em" x="62.5%" fill="#ffffff">#707A8C66</text>
-				<text y="71.5em" x="87.5%" fill="#ffffff">#4D556699</text>
+				<text y="71.5em" x="12.5%" fill="333333">editor.findMatch.inactive</text>
+				<text y="71.5em" x="37.5%" fill="#000000">#ECD9FF73</text>
+				<text y="71.5em" x="62.5%" fill="#ffffff">#69538066</text>
+				<text y="71.5em" x="87.5%" fill="#ffffff">#6C598066</text>
 			</g>
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="67.8em" rx="2" ry="2" fill="#8a9199cc" />
-				<rect height="1.8em" width="20%" x="52.5%" y="67.8em" rx="2" ry="2" fill="#707a8ccc" />
-				<rect height="1.8em" width="20%" x="77.5%" y="67.8em" rx="2" ry="2" fill="#4d5566e6" />
+				<rect height="1.8em" width="20%" x="52.5%" y="67.8em" rx="2" ry="2" fill="#8a9199cc" />
+				<rect height="1.8em" width="20%" x="77.5%" y="67.8em" rx="2" ry="2" fill="#6c7380e6" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="74.75em" x="12.5%" fill="333333">ui.gutter.active</text>
+				<text y="74.75em" x="12.5%" fill="333333">editor.gutter.active</text>
 				<text y="74.75em" x="37.5%" fill="#000000">#8A9199CC</text>
-				<text y="74.75em" x="62.5%" fill="#ffffff">#707A8CCC</text>
-				<text y="74.75em" x="87.5%" fill="#ffffff">#4D5566E6</text>
+				<text y="74.75em" x="62.5%" fill="#000000">#8A9199CC</text>
+				<text y="74.75em" x="87.5%" fill="#ffffff">#6C7380E6</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="2" ry="2" fill="#d1e4f4" />
-				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="2" ry="2" fill="#33415e" />
-				<rect height="1.8em" width="20%" x="77.5%" y="70.8em" rx="2" ry="2" fill="#273747" />
+				<rect height="1.8em" width="20%" x="27.5%" y="70.8em" rx="2" ry="2" fill="#8a919966" />
+				<rect height="1.8em" width="20%" x="52.5%" y="70.8em" rx="2" ry="2" fill="#8a919966" />
+				<rect height="1.8em" width="20%" x="77.5%" y="70.8em" rx="2" ry="2" fill="#6c738099" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="78em" x="12.5%" fill="333333">ui.selection.bg</text>
-				<text y="78em" x="37.5%" fill="#000000">#D1E4F4</text>
-				<text y="78em" x="62.5%" fill="#ffffff">#33415E</text>
-				<text y="78em" x="87.5%" fill="#ffffff">#273747</text>
+				<text y="78em" x="12.5%" fill="333333">editor.gutter.normal</text>
+				<text y="78em" x="37.5%" fill="#000000">#8A919966</text>
+				<text y="78em" x="62.5%" fill="#000000">#8A919966</text>
+				<text y="78em" x="87.5%" fill="#ffffff">#6C738099</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="2" ry="2" fill="#e7e8e9" />
-				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="2" ry="2" fill="#323a4c" />
-				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="2" ry="2" fill="#1b2733" />
+				<rect height="1.8em" width="20%" x="27.5%" y="73.8em" rx="2" ry="2" fill="#8a919959" />
+				<rect height="1.8em" width="20%" x="52.5%" y="73.8em" rx="2" ry="2" fill="#8a919959" />
+				<rect height="1.8em" width="20%" x="77.5%" y="73.8em" rx="2" ry="2" fill="#6c738080" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="81.25em" x="12.5%" fill="333333">ui.selection.inactive</text>
-				<text y="81.25em" x="37.5%" fill="#000000">#E7E8E9</text>
-				<text y="81.25em" x="62.5%" fill="#ffffff">#323A4C</text>
-				<text y="81.25em" x="87.5%" fill="#ffffff">#1B2733</text>
+				<text y="81.25em" x="12.5%" fill="333333">editor.indentGuide.active</text>
+				<text y="81.25em" x="37.5%" fill="#000000">#8A919959</text>
+				<text y="81.25em" x="62.5%" fill="#000000">#8A919959</text>
+				<text y="81.25em" x="87.5%" fill="#ffffff">#6C738080</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="2" ry="2" fill="#e1e1e2" />
-				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="2" ry="2" fill="#323a4c" />
-				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="2" ry="2" fill="#304357" />
+				<rect height="1.8em" width="20%" x="27.5%" y="76.8em" rx="2" ry="2" fill="#8a91992e" />
+				<rect height="1.8em" width="20%" x="52.5%" y="76.8em" rx="2" ry="2" fill="#8a91992e" />
+				<rect height="1.8em" width="20%" x="77.5%" y="76.8em" rx="2" ry="2" fill="#6c738033" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="84.5em" x="12.5%" fill="333333">ui.selection.border</text>
-				<text y="84.5em" x="37.5%" fill="#000000">#E1E1E2</text>
-				<text y="84.5em" x="62.5%" fill="#ffffff">#323A4C</text>
-				<text y="84.5em" x="87.5%" fill="#ffffff">#304357</text>
+				<text y="84.5em" x="12.5%" fill="333333">editor.indentGuide.normal</text>
+				<text y="84.5em" x="37.5%" fill="#000000">#8A91992E</text>
+				<text y="84.5em" x="62.5%" fill="#000000">#8A91992E</text>
+				<text y="84.5em" x="87.5%" fill="#ffffff">#6C738033</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="79.8em" rx="2" ry="2" fill="#8a919959" />
-				<rect height="1.8em" width="20%" x="52.5%" y="79.8em" rx="2" ry="2" fill="#707a8cb3" />
-				<rect height="1.8em" width="20%" x="77.5%" y="79.8em" rx="2" ry="2" fill="#4d5566b3" />
+				<rect height="1.8em" width="20%" x="27.5%" y="79.8em" rx="2" ry="2" fill="#8a9199" />
+				<rect height="1.8em" width="20%" x="52.5%" y="79.8em" rx="2" ry="2" fill="#707a8c" />
+				<rect height="1.8em" width="20%" x="77.5%" y="79.8em" rx="2" ry="2" fill="#565b66" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="87.75em" x="12.5%" fill="333333">ui.guide.active</text>
-				<text y="87.75em" x="37.5%" fill="#000000">#8A919959</text>
-				<text y="87.75em" x="62.5%" fill="#ffffff">#707A8CB3</text>
-				<text y="87.75em" x="87.5%" fill="#ffffff">#4D5566B3</text>
+				<text y="87.75em" x="12.5%" fill="333333">ui.fg</text>
+				<text y="87.75em" x="37.5%" fill="#000000">#8A9199</text>
+				<text y="87.75em" x="62.5%" fill="#ffffff">#707A8C</text>
+				<text y="87.75em" x="87.5%" fill="#ffffff">#565B66</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="82.8em" rx="2" ry="2" fill="#8a91992e" />
-				<rect height="1.8em" width="20%" x="52.5%" y="82.8em" rx="2" ry="2" fill="#707a8c4d" />
-				<rect height="1.8em" width="20%" x="77.5%" y="82.8em" rx="2" ry="2" fill="#4d556666" />
+				<rect height="1.8em" width="20%" x="27.5%" y="82.8em" rx="2" ry="2" fill="#f8f9fa" />
+				<rect height="1.8em" width="20%" x="52.5%" y="82.8em" rx="2" ry="2" fill="#1f2430" />
+				<rect height="1.8em" width="20%" x="77.5%" y="82.8em" rx="2" ry="2" fill="#0b0e14" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="91em" x="12.5%" fill="333333">ui.guide.normal</text>
-				<text y="91em" x="37.5%" fill="#000000">#8A91992E</text>
-				<text y="91em" x="62.5%" fill="#ffffff">#707A8C4D</text>
-				<text y="91em" x="87.5%" fill="#ffffff">#4D556666</text>
+				<text y="91em" x="12.5%" fill="333333">ui.bg</text>
+				<text y="91em" x="37.5%" fill="#000000">#F8F9FA</text>
+				<text y="91em" x="62.5%" fill="#ffffff">#1F2430</text>
+				<text y="91em" x="87.5%" fill="#ffffff">#0B0E14</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="85.8em" rx="2" ry="2" fill="#99bf4d" />
-				<rect height="1.8em" width="20%" x="52.5%" y="85.8em" rx="2" ry="2" fill="#a6cc70" />
-				<rect height="1.8em" width="20%" x="77.5%" y="85.8em" rx="2" ry="2" fill="#91b362" />
+				<rect height="1.8em" width="20%" x="27.5%" y="85.8em" rx="2" ry="2" fill="#6b7d8f1f" />
+				<rect height="1.8em" width="20%" x="52.5%" y="85.8em" rx="2" ry="2" fill="#171b24" />
+				<rect height="1.8em" width="20%" x="77.5%" y="85.8em" rx="2" ry="2" fill="#11151c" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="94.25em" x="12.5%" fill="333333">vcs.added</text>
-				<text y="94.25em" x="37.5%" fill="#000000">#99BF4D</text>
-				<text y="94.25em" x="62.5%" fill="#000000">#A6CC70</text>
-				<text y="94.25em" x="87.5%" fill="#000000">#91B362</text>
+				<text y="94.25em" x="12.5%" fill="333333">ui.line</text>
+				<text y="94.25em" x="37.5%" fill="#ffffff">#6B7D8F1F</text>
+				<text y="94.25em" x="62.5%" fill="#ffffff">#171B24</text>
+				<text y="94.25em" x="87.5%" fill="#ffffff">#11151C</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="88.8em" rx="2" ry="2" fill="#709ecc" />
-				<rect height="1.8em" width="20%" x="52.5%" y="88.8em" rx="2" ry="2" fill="#77a8d9" />
-				<rect height="1.8em" width="20%" x="77.5%" y="88.8em" rx="2" ry="2" fill="#6994bf" />
+				<rect height="1.8em" width="20%" x="27.5%" y="88.8em" rx="2" ry="2" fill="#56728f1f" />
+				<rect height="1.8em" width="20%" x="52.5%" y="88.8em" rx="2" ry="2" fill="#63759926" />
+				<rect height="1.8em" width="20%" x="77.5%" y="88.8em" rx="2" ry="2" fill="#47526640" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="97.5em" x="12.5%" fill="333333">vcs.modified</text>
-				<text y="97.5em" x="37.5%" fill="#000000">#709ECC</text>
-				<text y="97.5em" x="62.5%" fill="#000000">#77A8D9</text>
-				<text y="97.5em" x="87.5%" fill="#000000">#6994BF</text>
+				<text y="97.5em" x="12.5%" fill="333333">ui.selection.active</text>
+				<text y="97.5em" x="37.5%" fill="#ffffff">#56728F1F</text>
+				<text y="97.5em" x="62.5%" fill="#ffffff">#63759926</text>
+				<text y="97.5em" x="87.5%" fill="#ffffff">#47526640</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="91.8em" rx="2" ry="2" fill="#f27983" />
-				<rect height="1.8em" width="20%" x="52.5%" y="91.8em" rx="2" ry="2" fill="#f27983" />
-				<rect height="1.8em" width="20%" x="77.5%" y="91.8em" rx="2" ry="2" fill="#d96c75" />
+				<rect height="1.8em" width="20%" x="27.5%" y="91.8em" rx="2" ry="2" fill="#6b7d8f1f" />
+				<rect height="1.8em" width="20%" x="52.5%" y="91.8em" rx="2" ry="2" fill="#69758c1f" />
+				<rect height="1.8em" width="20%" x="77.5%" y="91.8em" rx="2" ry="2" fill="#47526633" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
-				<text y="100.75em" x="12.5%" fill="333333">vcs.removed</text>
-				<text y="100.75em" x="37.5%" fill="#000000">#F27983</text>
-				<text y="100.75em" x="62.5%" fill="#000000">#F27983</text>
-				<text y="100.75em" x="87.5%" fill="#000000">#D96C75</text>
+				<text y="100.75em" x="12.5%" fill="333333">ui.selection.normal</text>
+				<text y="100.75em" x="37.5%" fill="#ffffff">#6B7D8F1F</text>
+				<text y="100.75em" x="62.5%" fill="#ffffff">#69758C1F</text>
+				<text y="100.75em" x="87.5%" fill="#ffffff">#47526633</text>
+			</g>
+		
+			<g>
+				<rect height="1.8em" width="20%" x="27.5%" y="94.8em" rx="2" ry="2" fill="#f3f4f5" />
+				<rect height="1.8em" width="20%" x="52.5%" y="94.8em" rx="2" ry="2" fill="#1c212b" />
+				<rect height="1.8em" width="20%" x="77.5%" y="94.8em" rx="2" ry="2" fill="#0f131a" />
+			</g>
+
+			<g font-family="sans-serif" font-size="12">
+				<text y="104em" x="12.5%" fill="333333">ui.panel.bg</text>
+				<text y="104em" x="37.5%" fill="#000000">#F3F4F5</text>
+				<text y="104em" x="62.5%" fill="#ffffff">#1C212B</text>
+				<text y="104em" x="87.5%" fill="#ffffff">#0F131A</text>
+			</g>
+		
+			<g>
+				<rect height="1.8em" width="20%" x="27.5%" y="97.8em" rx="2" ry="2" fill="#00000026" />
+				<rect height="1.8em" width="20%" x="52.5%" y="97.8em" rx="2" ry="2" fill="#12151cb3" />
+				<rect height="1.8em" width="20%" x="77.5%" y="97.8em" rx="2" ry="2" fill="#00000080" />
+			</g>
+
+			<g font-family="sans-serif" font-size="12">
+				<text y="107.25em" x="12.5%" fill="333333">ui.panel.shadow</text>
+				<text y="107.25em" x="37.5%" fill="#ffffff">#00000026</text>
+				<text y="107.25em" x="62.5%" fill="#ffffff">#12151CB3</text>
+				<text y="107.25em" x="87.5%" fill="#ffffff">#00000080</text>
+			</g>
+		
+			<g>
+				<rect height="1.8em" width="20%" x="27.5%" y="100.8em" rx="2" ry="2" fill="#ffaa33" />
+				<rect height="1.8em" width="20%" x="52.5%" y="100.8em" rx="2" ry="2" fill="#ffcc66" />
+				<rect height="1.8em" width="20%" x="77.5%" y="100.8em" rx="2" ry="2" fill="#e6b450" />
+			</g>
+
+			<g font-family="sans-serif" font-size="12">
+				<text y="110.5em" x="12.5%" fill="333333">common.accent</text>
+				<text y="110.5em" x="37.5%" fill="#000000">#FFAA33</text>
+				<text y="110.5em" x="62.5%" fill="#000000">#FFCC66</text>
+				<text y="110.5em" x="87.5%" fill="#000000">#E6B450</text>
+			</g>
+		
+			<g>
+				<rect height="1.8em" width="20%" x="27.5%" y="103.8em" rx="2" ry="2" fill="#e65050" />
+				<rect height="1.8em" width="20%" x="52.5%" y="103.8em" rx="2" ry="2" fill="#ff6666" />
+				<rect height="1.8em" width="20%" x="77.5%" y="103.8em" rx="2" ry="2" fill="#d95757" />
+			</g>
+
+			<g font-family="sans-serif" font-size="12">
+				<text y="113.75em" x="12.5%" fill="333333">common.error</text>
+				<text y="113.75em" x="37.5%" fill="#000000">#E65050</text>
+				<text y="113.75em" x="62.5%" fill="#000000">#FF6666</text>
+				<text y="113.75em" x="87.5%" fill="#000000">#D95757</text>
 			</g>
 		
 
