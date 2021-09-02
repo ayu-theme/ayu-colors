@@ -2,7 +2,7 @@ import * as chroma from 'chroma-js'
 
 
 export class Color {
-  constructor(private base: chroma.Color, private  color: chroma.Color) {
+  constructor(private  color: chroma.Color) {
   }
 
   rgb() {
@@ -13,36 +13,37 @@ export class Color {
     return this.color.rgba()
   }
 
-  hex(type?: 'rgb' | 'rgba' | 'blend'): string {
+  hex(): string
+  hex(type: 'rgb' | 'rgba'): string
+  hex(type: 'blend', base: Color): string
+  hex(type?: any, base?: Color): string {
     if (type != 'blend') return this.color.hex(type)
 
     const alpha: number = this.color.alpha() as any
-    return this.forceAlpha(1).fade(1 - alpha).hex()
+    return this.alpha(1).fade(base, 1 - alpha).hex()
+  }
+
+  preserveAlpha(base: Color, value: number) {
+    const alpha: number = this.color.alpha() as any
+    if (alpha === 1) return this.alpha(value)
+    return new Color(this.alpha(1).fade(base, 1 - alpha).color.alpha(value))
   }
 
   alpha(value: number) {
-    const alpha: number = this.color.alpha() as any
-    if (alpha === 1) return this.forceAlpha(value)
-    return new Color(this.base, this.forceAlpha(1).fade(1 - alpha).color.alpha(value))
+    return new Color(this.color.alpha(value))
   }
 
-  forceAlpha(value: number) {
-    return new Color(this.base, this.color.alpha(value))
-  }
-
-  fade(value: number) {
-    return new Color(this.base, chroma.mix(this.base, this.color, 1 - value))
+  fade(base: Color, value: number) {
+    return new Color(chroma.mix(base.color, this.color, 1 - value))
   }
 
   darken(value: number) {
-    return new Color(this.base, this.color.darken(value))
+    return new Color(this.color.darken(value))
   }
 
   brighten(value: number) {
-    return new Color(this.base, this.color.brighten(value))
+    return new Color(this.color.brighten(value))
   }
 }
 
-export default (hexBase: string) =>
-  (hexColor: string) =>
-    new Color(chroma(hexBase), chroma(hexColor))
+export default (hex: TemplateStringsArray) => new Color(chroma(hex.join('')))
