@@ -108,14 +108,14 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="25.8em" rx="2" ry="2" fill="#e6ba7e" />
-				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#ffe6b3" />
+				<rect height="1.8em" width="20%" x="52.5%" y="25.8em" rx="2" ry="2" fill="#ffdfb3" />
 				<rect height="1.8em" width="20%" x="77.5%" y="25.8em" rx="2" ry="2" fill="#e6b673" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="29.25em" x="12.5%" fill="333333">syntax.special</text>
 				<text y="29.25em" x="37.5%" fill="#000000">#E6BA7E</text>
-				<text y="29.25em" x="62.5%" fill="#000000">#FFE6B3</text>
+				<text y="29.25em" x="62.5%" fill="#000000">#FFDFB3</text>
 				<text y="29.25em" x="87.5%" fill="#000000">#E6B673</text>
 			</g>
 		
@@ -134,15 +134,15 @@
 		
 			<g>
 				<rect height="1.8em" width="20%" x="27.5%" y="31.8em" rx="2" ry="2" fill="#a37acc" />
-				<rect height="1.8em" width="20%" x="52.5%" y="31.8em" rx="2" ry="2" fill="#d4bfff" />
-				<rect height="1.8em" width="20%" x="77.5%" y="31.8em" rx="2" ry="2" fill="#c3a6ff" />
+				<rect height="1.8em" width="20%" x="52.5%" y="31.8em" rx="2" ry="2" fill="#dfbfff" />
+				<rect height="1.8em" width="20%" x="77.5%" y="31.8em" rx="2" ry="2" fill="#d2a6ff" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="35.75em" x="12.5%" fill="333333">syntax.constant</text>
 				<text y="35.75em" x="37.5%" fill="#000000">#A37ACC</text>
-				<text y="35.75em" x="62.5%" fill="#000000">#D4BFFF</text>
-				<text y="35.75em" x="87.5%" fill="#000000">#C3A6FF</text>
+				<text y="35.75em" x="62.5%" fill="#000000">#DFBFFF</text>
+				<text y="35.75em" x="87.5%" fill="#000000">#D2A6FF</text>
 			</g>
 		
 			<g>
@@ -198,14 +198,14 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="46.8em" rx="2" ry="2" fill="#505559" />
+				<rect height="1.8em" width="20%" x="27.5%" y="46.8em" rx="2" ry="2" fill="#5c6166" />
 				<rect height="1.8em" width="20%" x="52.5%" y="46.8em" rx="2" ry="2" fill="#cccac2" />
 				<rect height="1.8em" width="20%" x="77.5%" y="46.8em" rx="2" ry="2" fill="#bfbdb6" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="52em" x="12.5%" fill="333333">editor.fg</text>
-				<text y="52em" x="37.5%" fill="#ffffff">#505559</text>
+				<text y="52em" x="37.5%" fill="#ffffff">#5C6166</text>
 				<text y="52em" x="62.5%" fill="#000000">#CCCAC2</text>
 				<text y="52em" x="87.5%" fill="#000000">#BFBDB6</text>
 			</g>
@@ -263,27 +263,27 @@
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="2" ry="2" fill="#ecd9ff" />
+				<rect height="1.8em" width="20%" x="27.5%" y="61.8em" rx="2" ry="2" fill="#9f40ff2b" />
 				<rect height="1.8em" width="20%" x="52.5%" y="61.8em" rx="2" ry="2" fill="#695380" />
 				<rect height="1.8em" width="20%" x="77.5%" y="61.8em" rx="2" ry="2" fill="#6c5980" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="68.25em" x="12.5%" fill="333333">editor.findMatch.active</text>
-				<text y="68.25em" x="37.5%" fill="#000000">#ECD9FF</text>
+				<text y="68.25em" x="37.5%" fill="#ffffff">#9F40FF2B</text>
 				<text y="68.25em" x="62.5%" fill="#ffffff">#695380</text>
 				<text y="68.25em" x="87.5%" fill="#ffffff">#6C5980</text>
 			</g>
 		
 			<g>
-				<rect height="1.8em" width="20%" x="27.5%" y="64.8em" rx="2" ry="2" fill="#ecd9ff73" />
+				<rect height="1.8em" width="20%" x="27.5%" y="64.8em" rx="2" ry="2" fill="#9f40ffcc" />
 				<rect height="1.8em" width="20%" x="52.5%" y="64.8em" rx="2" ry="2" fill="#69538066" />
 				<rect height="1.8em" width="20%" x="77.5%" y="64.8em" rx="2" ry="2" fill="#6c598066" />
 			</g>
 
 			<g font-family="sans-serif" font-size="12">
 				<text y="71.5em" x="12.5%" fill="333333">editor.findMatch.inactive</text>
-				<text y="71.5em" x="37.5%" fill="#000000">#ECD9FF73</text>
+				<text y="71.5em" x="37.5%" fill="#ffffff">#9F40FFCC</text>
 				<text y="71.5em" x="62.5%" fill="#ffffff">#69538066</text>
 				<text y="71.5em" x="87.5%" fill="#ffffff">#6C598066</text>
 			</g>
