@@ -32,8 +32,8 @@ const editor = {
     inactive: e`035BD6`.alpha(0.07)
   },
   findMatch: {
-    active: e`9F40FF`.alpha(0.17),
-    inactive: e`9F40FF`.alpha(0.8)
+    active: e`ECD9FF`,
+    inactive: e`ECD9FF`.alpha(0.45)
   },
   gutter: {
     active: e`8A9199`.alpha(0.8),
@@ -46,11 +46,11 @@ const editor = {
 }
 
 const ui = {
-  fg: u`8A9199`,
+  fg: u`737980`,
   bg: u`F8F9FA`,
-  line: u`6B7D8F`.alpha(0.12),
+  line: u`DDE0E4`,
   selection: {
-    active: u`56728F`.alpha(0.12),
+    active: u`C8D0D9`,
     normal: u`6B7D8F`.alpha(0.12)
   },
   panel: {
@@ -61,6 +61,7 @@ const ui = {
 
 const common = {
   accent: u`FFAA33`,
+  accentFg: u`804A00`,
   error: u`E65050`
 }
 

@@ -50,7 +50,7 @@ const ui = {
   bg: u`1F2430`,
   line: u`171B24`,
   selection: {
-    active: u`637599`.alpha(0.15),
+    active: u`637599`.alpha(0.3),
     normal: u`69758C`.alpha(0.12)
   },
   panel: {
@@ -61,6 +61,7 @@ const ui = {
 
 const common = {
   accent: u`FFCC66`,
+  accentFg: u`805500`,
   error: u`FF6666`
 }
 

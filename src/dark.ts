@@ -18,7 +18,7 @@ const syntax = {
 }
 
 const vcs = {
-  added: e`7FD962`,
+  added: e`70BF56`,
   modified: e`73B8FF`,
   removed: e`F26D78`
 }
@@ -26,9 +26,9 @@ const vcs = {
 const editor = {
   fg: e`BFBDB6`,
   bg: e`0D1017`,
-  line: e`131721`,
+  line: e`1B1F26`,
   selection: {
-    active: e`409FFF`.alpha(0.3),
+    active: e`3D4B66`.alpha(0.35),
     inactive: e`409FFF`.alpha(0.13)
   },
   findMatch: {
@@ -48,7 +48,7 @@ const editor = {
 const ui = {
   fg: u`565B66`,
   bg: u`0B0E14`,
-  line: u`11151C`,
+  line: u`1E232B`,
   selection: {
     active: u`475266`.alpha(0.25),
     normal: u`475266`.alpha(0.2)
@@ -61,6 +61,7 @@ const ui = {
 
 const common = {
   accent: u`E6B450`,
+  accentFg: u`734D00`,
   error: u`D95757`
 }
 
