@@ -28,8 +28,8 @@ const editor = {
   bg: e`242936`,
   line: e`1A1F29`,
   selection: {
-    active: e`409FFF`.alpha(0.25),
-    inactive: e`409FFF`.alpha(0.13)
+    active: e`366FAD`,
+    inactive: e`366FAD`.alpha(0.13)
   },
   findMatch: {
     active: e`695380`,
@@ -48,7 +48,7 @@ const editor = {
 const ui = {
   fg: u`707A8C`,
   bg: u`1F2430`,
-  line: u`171B24`,
+  line: u`14171F`,
   selection: {
     active: u`637599`.alpha(0.3),
     normal: u`69758C`.alpha(0.12)
