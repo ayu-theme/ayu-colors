@@ -1,7 +1,7 @@
 import color from './color'
 
-const u = color('0B0E14')
-const e = color('0D1017')
+const u = color('0D1017')
+const e = color('10141C')
 
 const syntax = {
   tag: e`39BAE6`,
@@ -25,11 +25,11 @@ const vcs = {
 
 const editor = {
   fg: e`BFBDB6`,
-  bg: e`0D1017`,
-  line: e`131721`,
+  bg: e`10141C`,
+  line: e`161A24`,
   selection: {
-    active: e`409FFF`.alpha(0.3),
-    inactive: e`409FFF`.alpha(0.13)
+    active: e`3388FF`.alpha(0.25),
+    inactive: e`80B5FF`.alpha(0.15)
   },
   findMatch: {
     active: e`6C5980`,
@@ -41,26 +41,27 @@ const editor = {
   },
   indentGuide: {
     active: e`6C7380`.alpha(0.5),
-    normal: e`6C7380`.alpha(0.2)
+    normal: e`6C7380`.alpha(0.3)
   }
 }
 
 const ui = {
   fg: u`565B66`,
-  bg: u`0B0E14`,
-  line: u`11151C`,
+  bg: u`0D1017`,
+  line: u`1B1F29`,
   selection: {
     active: u`475266`.alpha(0.25),
     normal: u`475266`.alpha(0.2)
   },
-  panel: {
-    bg: u`0F131A`,
-    shadow: u`000000`.alpha(0.5)
+  popup: {
+    bg: u`141821`,
+    shadow: u`000000`.alpha(0.6)
   }
 }
 
 const common = {
   accent: u`E6B450`,
+  accentFg: u`734D00`,
   error: u`D95757`
 }
 

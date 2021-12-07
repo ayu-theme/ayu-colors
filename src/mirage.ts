@@ -28,8 +28,8 @@ const editor = {
   bg: e`242936`,
   line: e`1A1F29`,
   selection: {
-    active: e`409FFF`.alpha(0.25),
-    inactive: e`409FFF`.alpha(0.13)
+    active: e`3388FF`.alpha(0.25),
+    inactive: e`4D97FF`.alpha(0.15)
   },
   findMatch: {
     active: e`695380`,
@@ -37,30 +37,31 @@ const editor = {
   },
   gutter: {
     active: e`8A9199`.alpha(0.8),
-    normal: e`8A9199`.alpha(0.4)
+    normal: e`8A9199`.alpha(0.5)
   },
   indentGuide: {
-    active: e`8A9199`.alpha(0.35),
-    normal: e`8A9199`.alpha(0.18)
+    active: e`8A9199`.alpha(0.6),
+    normal: e`8A9199`.alpha(0.3)
   }
 }
 
 const ui = {
   fg: u`707A8C`,
   bg: u`1F2430`,
-  line: u`171B24`,
+  line: u`161921`,
   selection: {
     active: u`637599`.alpha(0.15),
     normal: u`69758C`.alpha(0.12)
   },
-  panel: {
-    bg: u`1C212B`,
-    shadow: u`12151C`.alpha(0.7)
+  popup: {
+    bg: u`282E3B`,
+    shadow: u`000000`.alpha(0.3)
   }
 }
 
 const common = {
   accent: u`FFCC66`,
+  accentFg: u`805500`,
   error: u`FF6666`
 }
 
