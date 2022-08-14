@@ -27,6 +27,6 @@ _This package includes TypeScript definitions._
 
 ### Colors
 
-[*View in HTML*]("./colors.html");
+[View in HTML](https://htmlpreview.github.io/?https://github.com/skybldev/ayu-colors/blob/master/colors.html)
 
 <img width="100%" src="./colors.svg">
