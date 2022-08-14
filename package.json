@@ -8,7 +8,8 @@
     "build": "run-s clear-build compile",
     "compile": "tsc --pretty",
     "svg": "node scripts/build-svg.js",
-    "prepublish": "run-s build svg",
+    "html": "node scripts/build-html.js",
+    "prepublish": "run-s build svg html",
     "clear-build": "rimraf dist",
     "start": "run-s build svg test",
     "test": "node dist/__test__"

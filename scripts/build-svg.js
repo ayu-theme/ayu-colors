@@ -1,5 +1,4 @@
 const fs = require('fs')
-const isObject = require('is-object')
 const fontColorContrast = require('font-color-contrast')
 
 const colors = require('../dist/colors')
