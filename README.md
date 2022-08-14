@@ -27,4 +27,6 @@ _This package includes TypeScript definitions._
 
 ### Colors
 
+[*View in HTML*]("./colors.html");
+
 <img width="100%" src="./colors.svg">
