@@ -1,9 +1,14 @@
-import * as chroma from 'chroma-js'
+import chroma from 'chroma-js'
 
 export class Color {
   static blend = false
+  private color: chroma.Color
+  private bg: chroma.Color
 
-  constructor(private color: chroma.Color, private bg: chroma.Color) {}
+  constructor(color: chroma.Color, bg: chroma.Color) {
+    this.color = color
+    this.bg = bg
+  }
 
   rgb() {
     return this.color.rgb()

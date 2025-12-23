@@ -1,17 +1,24 @@
 {
   "name": "ayu",
-  "version": "8.0.1",
+  "version": "9.0.0-beta.3",
   "description": "The ayu sublime theme as a color palette",
-  "main": "dist/colors.js",
-  "types": "dist/colors.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/colors.d.ts",
+      "default": "./dist/colors.js"
+    },
+    "./color": {
+      "types": "./dist/color.d.ts",
+      "default": "./dist/color.js"
+    }
+  },
   "scripts": {
-    "build": "run-s clear-build compile",
-    "compile": "tsc --pretty",
-    "svg": "node scripts/build-svg.js",
-    "prepublish": "run-s build svg",
-    "clear-build": "rimraf dist",
-    "start": "run-s build svg test",
-    "test": "node dist/__test__"
+    "build": "tsc",
+    "svg": "npm run build && node scripts/build-svg.js",
+    "test": "npm run build && node --test dist/__test__.js",
+    "prepublishOnly": "npm run build",
+    "start": "npm run svg && npm test"
   },
   "files": [
     "dist"
@@ -22,17 +29,17 @@
   },
   "author": "Konstantin Pschera <me@kons.ch>",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "devDependencies": {
-    "@types/node": "^9.4.6",
-    "font-color-contrast": "1.0.3",
-    "is-object": "1.0.1",
-    "npm-run-all": "3.1.1",
-    "rimraf": "2.5.4",
-    "typescript": "^3.0.1"
+    "@types/node": "^20.10.0",
+    "font-color-contrast": "^11.1.0",
+    "typescript": "^5.8.0"
   },
   "dependencies": {
-    "@types/chroma-js": "^2.0.0",
-    "chroma-js": "^2.1.0",
+    "@types/chroma-js": "^2.4.0",
+    "chroma-js": "^2.6.0",
     "nonenumerable": "^1.1.1"
   }
 }

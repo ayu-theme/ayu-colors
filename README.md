@@ -1,30 +1,36 @@
-![ayu](http://i.imgur.com/b3etBQX.png)
+# ayu colors
 
-> The colors of [@dempfi's](https://github.com/dempfi) beautiful [ayu color scheme](https://github.com/dempfi/ayu) extracted as a NPM package.
+The color palette from the [ayu theme](https://github.com/ayu-theme/ayu) as an npm package.
 
-### Installation
+## Usage
 
-```
-npm install --save ayu
-yarn add ayu
-```
-
-### Usage
-
-```JS
+```typescript
 import { dark, light, mirage } from 'ayu'
 
-dark.common.bg.hex() === '#0f1419'
-light.common.fg.hex() === '#828c99'
-mirage.syntax.error.hex() === '#ff3333'
+// Access colors
+dark.syntax.keyword.hex()    // '#FF8F40'
+light.editor.bg.hex()        // '#FCFCFC'
+mirage.common.accent.hex()   // '#FFCC66'
 
-dark.common.bg.rgb() === '15, 20, 25'
-light.common.fg.rgb() === '97, 103, 108'
-mirage.syntax.error.rgb() === '255, 51, 51'
+// RGB values
+dark.syntax.string.rgb()     // [170, 217, 76]
 ```
 
-_This package includes TypeScript definitions._
+## Palette
 
-### Colors
+![Colors](./colors.svg)
 
-<img width="100%" src="./colors.svg">
+<details>
+  <summary>Full palette</summary>
+
+  ![Palette](./palette.svg)
+</details>
+
+## Ports
+
+* [VS Code](https://github.com/ayu-theme/vscode-ayu)
+* [Sublime Text](https://github.com/ayu-theme/ayu)
+
+## License
+
+MIT
