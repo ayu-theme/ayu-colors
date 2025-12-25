@@ -1,6 +1,6 @@
 {
   "name": "ayu",
-  "version": "9.0.0-beta.3",
+  "version": "9.0.0",
   "description": "The ayu sublime theme as a color palette",
   "type": "module",
   "exports": {
