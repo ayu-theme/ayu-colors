@@ -1,11 +1,7 @@
-import rawDark from './dark.js'
-import rawLight from './light.js'
-import rawMirage from './mirage.js'
+import type { Scheme } from './scheme.js'
 
-export type Scheme = typeof rawDark
+export type { Scheme }
 
-export const dark: Scheme = rawDark
-export const light: Scheme = rawLight
-export const mirage: Scheme = rawMirage
-
-export { alphaBlend } from './color.js'
+export { dark } from './generated/dark.js'
+export { light } from './generated/light.js'
+export { mirage } from './generated/mirage.js'

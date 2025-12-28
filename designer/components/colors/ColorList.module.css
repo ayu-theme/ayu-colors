@@ -1,0 +1,32 @@
+.colorList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--ayu-ui-line);
+  flex-shrink: 0;
+}
+
+.themeButtons {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ayu-ui-line) transparent;
+}

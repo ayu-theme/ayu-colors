@@ -1,0 +1,15 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.input {
+  width: 48px;
+  text-align: right;
+}
+
+.suffix {
+  margin-left: 2px;
+  opacity: 0.5;
+}

@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sectionLabel {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paletteRows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.paletteRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.paletteName {
+  font-size: var(--font-size-xs);
+  width: 48px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.paletteLevels {
+  display: flex;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.paletteButton {
+  flex: 1;
+  height: 24px;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+
+.paletteButton:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.paletteButton:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.paletteButton:hover {
+  box-shadow: inset 0 0 0 2px var(--ayu-accent);
+}
+
+.container[data-light="true"] .paletteButton:hover {
+  box-shadow: inset 0 0 0 2px var(--ayu-accent);
+}
+
+.searchWrapper {
+  /* No longer needs position: relative - Floating UI uses portal */
+}
+
+.searchInput {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-md);
+  font-family: var(--font-mono);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--ayu-accent);
+}
+
+.dropdown {
+  /* Positioning handled by Floating UI */
+  width: 248px;
+  border-radius: var(--radius-sm);
+  overflow: auto;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+}
+
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.colorPreview {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}

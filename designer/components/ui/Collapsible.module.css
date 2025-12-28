@@ -1,0 +1,64 @@
+.collapsible {
+  border-bottom: 1px solid var(--ayu-ui-line);
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  height: var(--section-header-height);
+  padding: 0 var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--ayu-ui-fg);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.trigger:hover {
+  color: var(--ayu-editor-fg);
+  background: color-mix(in oklch, var(--ayu-ui-line) 50%, transparent);
+}
+
+.trigger:focus-visible {
+  outline: none;
+  box-shadow: inset var(--focus-ring);
+}
+
+.chevron {
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.chevron.open {
+  transform: rotate(90deg);
+}
+
+.title {
+  flex: 1;
+  text-align: left;
+}
+
+.badge {
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  color: var(--ayu-ui-fg);
+  background: var(--ayu-ui-line);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.content {
+  overflow: hidden;
+  transition: height var(--transition-normal), opacity var(--transition-fast);
+}
+
+.inner {
+  padding: var(--space-3) var(--space-4);
+}

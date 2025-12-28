@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 28px;
+}
+
+.checkboxWrapper {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.sliderContainer {
+  flex: 1;
+  min-width: 80px;
+}

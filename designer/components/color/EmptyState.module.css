@@ -1,0 +1,42 @@
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.icon {
+  color: var(--ayu-ui-fg);
+  opacity: 0.5;
+  margin-bottom: var(--space-4);
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--ayu-editor-fg);
+  margin-bottom: var(--space-2);
+}
+
+.description {
+  font-size: var(--font-size-md);
+  color: var(--ayu-ui-fg);
+  line-height: 1.5;
+}
+
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 var(--space-1);
+  background: var(--ayu-ui-line);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--ayu-editor-fg);
+}

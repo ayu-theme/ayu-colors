@@ -1,0 +1,21 @@
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  border: 1px solid var(--ayu-ui-line);
+  border-radius: var(--radius-sm);
+  background: var(--ayu-editor-bg);
+  color: var(--ayu-editor-fg);
+  outline: none;
+  transition: border-color 120ms;
+}
+
+.input:focus {
+  border-color: var(--ayu-accent);
+}
+
+.input::placeholder {
+  color: var(--ayu-ui-fg);
+  opacity: 0.6;
+}

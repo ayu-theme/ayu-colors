@@ -1,0 +1,66 @@
+.row {
+  display: flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  gap: var(--space-3);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.row:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.swatchWrapper {
+  position: relative;
+}
+
+.swatch {
+  width: 80px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.swatch:hover {
+  transform: scale(1.02);
+}
+
+.path {
+  font-size: var(--font-size-md);
+  flex: 1;
+}
+
+.oklch {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-mono);
+  opacity: 0.5;
+}
+
+.hex {
+  font-size: var(--font-size-md);
+  font-family: var(--font-mono);
+}
+
+.refIndicator {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.modifiers {
+  display: flex;
+  gap: 4px;
+}
+
+.modifier {
+  font-size: var(--font-size-xs);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+}

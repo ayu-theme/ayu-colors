@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_type_npm</title>
+    <g id="file_type_npm">
+        <path d="m2 1c-0.57 0-1 0.46-1 1v12c0 0.57 0.46 1 1 1h12c0.57 0 1-0.46 1-1v-12c0-0.57-0.46-1-1-1zm2 3.1 8.1 0.011-0.0053 8.1h-2l0.0058-6.1h-2l-0.0047 6.1h-4z" fill="#cb3837" style="stroke-width:.58"/>
+    </g>
+</svg>

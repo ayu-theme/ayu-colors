@@ -1,5 +1,7 @@
 # Project specific
 dist
+src/generated
+*.tsbuildinfo
 
 # Created by https://www.gitignore.io/api/node
 
@@ -48,3 +50,6 @@ jspm_packages
 
 # Output of 'npm pack'
 *.tgz
+designer/.next
+.idea
+.DS_Store

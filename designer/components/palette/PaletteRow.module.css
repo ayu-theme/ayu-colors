@@ -1,0 +1,43 @@
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.swatches {
+  display: flex;
+  flex: 1;
+}
+
+.swatchWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.swatch {
+  width: 100%;
+  height: 40px;
+  transition: transform var(--transition-fast);
+}
+
+.swatch:hover {
+  transform: scale(1.02);
+}
+
+.swatchSource {
+  cursor: pointer;
+}
+
+.sourceIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 3px;
+  border-radius: 2px 2px 0 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--ayu-ui-bg);
+  color: var(--ayu-editor-fg);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.colorPanel {
+  flex: 0 0 auto;
+  min-width: 320px;
+  border-right: 1px solid var(--ayu-ui-line);
+  background: var(--ayu-ui-bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.editorPanel {
+  width: var(--panel-editor-width);
+  flex-shrink: 0;
+  overflow-y: auto;
+  animation: fadeIn 150ms ease-out;
+}
+
+.previewPanel {
+  flex: 1;
+  min-width: 400px;
+  padding: var(--space-4);
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  height: 100vh;
+  background: var(--ayu-ui-bg);
+  color: var(--ayu-editor-fg);
+  font-family: var(--font-sans);
+}
+
+.loadingSpinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--ayu-ui-line);
+  border-top-color: var(--ayu-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

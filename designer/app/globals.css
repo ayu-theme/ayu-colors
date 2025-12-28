@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/IosevkaCustom-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/IosevkaCustom-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/IosevkaCustom-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/IosevkaCustom-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+:root {
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 12px;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Iosevka', ui-monospace, Menlo, Monaco, monospace;
+  --font-size-xs: 10px;
+  --font-size-sm: 11px;
+  --font-size-md: 12px;
+  --font-size-lg: 13px;
+  --font-size-xl: 18px;
+
+  /* Transitions */
+  --transition-fast: 120ms ease-out;
+  --transition-normal: 200ms ease-out;
+
+  /* Ayu theme colors (set dynamically via JS) */
+  --ayu-ui-bg: #0D1017;
+  --ayu-ui-fg: #555E73;
+  --ayu-ui-line: #1B1F29;
+  --ayu-ui-panel-bg: #141821;
+  --ayu-editor-bg: #10141C;
+  --ayu-editor-fg: #BFBDB6;
+  --ayu-accent: #E6B450;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.25);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 2px var(--ayu-accent);
+
+  /* Panel sizes */
+  --header-height: 52px;
+  --panel-editor-width: 400px;
+  --panel-preview-width: 600px;
+  --section-header-height: 40px;
+
+  /* Swatch sizes */
+  --swatch-size-sm: 20px;
+  --swatch-size-md: 28px;
+  --swatch-size-lg: 36px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; height: 0; }
+  to { opacity: 1; height: var(--content-height); }
+}
+
+@keyframes slideUp {
+  from { opacity: 1; height: var(--content-height); }
+  to { opacity: 0; height: 0; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ayu-ui-line);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ayu-ui-fg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--ayu-ui-bg);
+}
+
+/* Form elements */
+input, select {
+  padding: 4px 8px;
+  border: 1px solid var(--ayu-ui-line);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-md);
+  color: var(--ayu-editor-fg);
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: var(--ayu-ui-fg);
+}
+
+select {
+  cursor: pointer;
+}

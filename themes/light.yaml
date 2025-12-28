@@ -1,0 +1,81 @@
+palette:
+  range: 0.625:0.825
+  steps: 5
+  gray: ADAEB1
+  red: F07171
+  pink: F2A191
+  orange: FA8532
+  peach: E59645
+  yellow: EBA400
+  green: 86B300
+  teal: 4CBF99
+  indigo: 55B4D4
+  blue: 22A4E6
+  purple: A37ACC
+syntax:
+  tag: $palette.indigo.l3
+  func: $palette.yellow.l4
+  entity: $palette.blue.l2
+  string: $palette.green.l3
+  regexp: $palette.teal.l3
+  markup: $palette.red.l2
+  keyword: $palette.orange.l3
+  special: $palette.peach.l3
+  comment: $palette.gray.l4
+  constant: $palette.purple.l2
+  operator: $palette.pink.l4
+terminal:
+  black: $palette.gray.l1
+  red: $syntax.markup
+  green: $syntax.string
+  yellow: $syntax.func
+  blue: $syntax.entity
+  magenta: $syntax.constant
+  cyan: $syntax.regexp
+  white: $palette.gray.l4
+  brightBlack: $palette.gray.l2
+  brightRed: $syntax.markup
+  brightGreen: $syntax.string
+  brightYellow: $syntax.func
+  brightBlue: $syntax.entity
+  brightMagenta: $syntax.constant
+  brightCyan: $syntax.regexp
+  brightWhite: $palette.gray.l5
+vcs:
+  added: 6CBF43
+  modified: 478ACC
+  removed: FF7383
+editor:
+  fg: 5C6166
+  bg: FCFCFC
+  line: $ui.fg A0.1
+  selection:
+    active: 035BD6 A0.15
+    inactive: $editor.selection.active A0.07
+  findMatch:
+    active: FFE294
+    inactive: $editor.findMatch.active A0.5
+  lineNumber:
+    active: $ui.fg A0.8
+    normal: $ui.fg A0.4
+  indentGuide:
+    active: $ui.fg A0.35
+    normal: $ui.fg A0.18
+ui:
+  fg: 828E9F
+  bg: F8F9FA
+  line: 6B7D8F A0.12
+  selection:
+    active: $ui.line A0.14
+    normal: $ui.line
+  panel:
+    bg: FAFAFA
+    shadow: $ui.line A0.07
+  popup:
+    bg: FFFFFF
+    shadow: $ui.line A0.1
+common:
+  accent:
+    tint: F29718
+    on: $common.accent.tint -L0.29
+  error: E65050
