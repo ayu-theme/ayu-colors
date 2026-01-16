@@ -12,17 +12,29 @@ palette:
   indigo: 55B4D4
   blue: 22A4E6
   purple: A37ACC
+# Syntax highlighting colors
 syntax:
+  # HTML/XML tags, CSS selectors
   tag: $palette.indigo.l3
+  # Function names and calls
   func: $palette.yellow.l4
+  # Class names, types, modules
   entity: $palette.blue.l2
+  # String literals
   string: $palette.green.l3
+  # Regular expressions
   regexp: $palette.teal.l3
+  # Markup elements (bold, italic, headings)
   markup: $palette.red.l2
+  # Language keywords (if, else, return)
   keyword: $palette.orange.l3
+  # Special values (this, self, super)
   special: $palette.peach.l3
+  # Code comments
   comment: $palette.gray.l4
+  # Constants and numbers
   constant: $palette.purple.l2
+  # Operators (+, -, =, etc.)
   operator: $palette.pink.l4
 terminal:
   black: $palette.gray.l1
@@ -45,9 +57,14 @@ vcs:
   added: 6CBF43
   modified: 478ACC
   removed: FF7383
+surface:
+  sunk: EBEEF0
+  base: F8F9FA
+  lift: FCFCFC
+  over: FFFFFF
 editor:
   fg: 5C6166
-  bg: FCFCFC
+  bg: $surface.lift
   line: $ui.fg A0.1
   selection:
     active: 035BD6 A0.15
@@ -63,7 +80,7 @@ editor:
     normal: $ui.fg A0.18
 ui:
   fg: 828E9F
-  bg: F8F9FA
+  bg: $surface.base
   line: 6B7D8F A0.12
   selection:
     active: $ui.line A0.14

@@ -1,14 +1,22 @@
-import { writeFileSync } from 'node:fs'
-import { stringify } from 'yaml'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { exec } from 'node:child_process'
 import { join } from 'node:path'
+import { parseDocument } from 'yaml'
+import { applyChangesToDocument, stringifyDocument } from '../../../../src/yaml-parser.js'
 
 export async function POST(req: Request) {
   const { theme, rawData } = await req.json()
   const themePath = join(process.cwd(), 'themes', `${theme}.yaml`)
 
-  // Write YAML with no line wrapping - rawData preserves references like "$syntax.markup -L0.07"
-  writeFileSync(themePath, stringify(rawData, { lineWidth: 0 }))
+  // Read original YAML and parse as Document (preserves comments)
+  const originalContent = readFileSync(themePath, 'utf-8')
+  const doc = parseDocument(originalContent)
+
+  // Apply changes from rawData to the Document
+  applyChangesToDocument(doc, rawData)
+
+  // Stringify the Document (preserves comments)
+  writeFileSync(themePath, stringifyDocument(doc))
 
   // Rebuild types and dist
   await new Promise<void>((resolve, reject) => {

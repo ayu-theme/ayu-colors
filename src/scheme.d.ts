@@ -16,17 +16,29 @@ export interface Palette {
 
 export interface Scheme {
   palette: Palette
+  /** Syntax highlighting colors */
   syntax: {
+    /** HTML/XML tags, CSS selectors */
     tag: Color
+    /** Function names and calls */
     func: Color
+    /** Class names, types, modules */
     entity: Color
+    /** String literals */
     string: Color
+    /** Regular expressions */
     regexp: Color
+    /** Markup elements (bold, italic, headings) */
     markup: Color
+    /** Language keywords (if, else, return) */
     keyword: Color
+    /** Special values (this, self, super) */
     special: Color
+    /** Code comments */
     comment: Color
+    /** Constants and numbers */
     constant: Color
+    /** Operators (+, -, =, etc.) */
     operator: Color
   }
   terminal: {
@@ -51,6 +63,12 @@ export interface Scheme {
     added: Color
     modified: Color
     removed: Color
+  }
+  surface: {
+    sunk: Color
+    base: Color
+    lift: Color
+    over: Color
   }
   editor: {
     fg: Color

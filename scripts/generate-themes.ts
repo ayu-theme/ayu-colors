@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parse as parseYaml } from 'yaml'
 import { Color } from '../src/color.js'
-import { parseColors } from './yaml-parser.js'
+import { parseColorsWithComments, type CommentsMap } from '../src/yaml-parser.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const themesDir = join(__dirname, '..', 'themes')
@@ -20,21 +20,33 @@ function generateColorExpr(color: Color): string {
   return `new Color('${hex.slice(1)}')`
 }
 
-function generateValue(value: unknown, indent: string): string {
+function generateValue(value: unknown, indent: string, comments: CommentsMap, pathPrefix: string[]): string {
   if (value instanceof Color) {
     return generateColorExpr(value)
   }
   if (typeof value === 'object' && value !== null) {
-    return generateObject(value as Record<string, unknown>, indent)
+    return generateObject(value as Record<string, unknown>, indent, comments, pathPrefix)
   }
   throw new Error(`Unexpected value type: ${typeof value}`)
 }
 
-function generateObject(obj: Record<string, unknown>, indent: string): string {
+function formatJsDocComment(comment: string, indent: string): string {
+  const lines = comment.split('\n')
+  if (lines.length === 1) {
+    return `${indent}/** ${comment} */\n`
+  }
+  const formattedLines = lines.map(line => `${indent} * ${line}`).join('\n')
+  return `${indent}/**\n${formattedLines}\n${indent} */\n`
+}
+
+function generateObject(obj: Record<string, unknown>, indent: string, comments: CommentsMap, pathPrefix: string[] = []): string {
   const entries = Object.entries(obj)
   const lines = entries.map(([key, value]) => {
-    const valueStr = generateValue(value, indent + '  ')
-    return `${indent}  ${key}: ${valueStr},`
+    const fullPath = [...pathPrefix, key].join('.')
+    const comment = comments.get(fullPath)
+    const valueStr = generateValue(value, indent + '  ', comments, [...pathPrefix, key])
+    const commentStr = comment ? formatJsDocComment(comment, indent + '  ') : ''
+    return `${commentStr}${indent}  ${key}: ${valueStr},`
   })
   return `{\n${lines.join('\n')}\n${indent}}`
 }
@@ -42,13 +54,13 @@ function generateObject(obj: Record<string, unknown>, indent: string): string {
 function generateTheme(name: string): void {
   const yamlPath = join(themesDir, `${name}.yaml`)
   const content = readFileSync(yamlPath, 'utf-8')
-  const scheme = parseColors<Record<string, unknown>>(content)
+  const { colors: scheme, comments } = parseColorsWithComments<Record<string, unknown>>(content)
 
   const code = `// Auto-generated from themes/${name}.yaml - DO NOT EDIT
 import { Color } from '../color.js'
 import type { Scheme } from '../scheme.js'
 
-export const ${name}: Scheme = ${generateObject(scheme, '')}
+export const ${name}: Scheme = ${generateObject(scheme, '', comments)}
 `
 
   writeFileSync(join(outputDir, `${name}.ts`), code)

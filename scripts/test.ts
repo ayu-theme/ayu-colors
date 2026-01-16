@@ -2,7 +2,7 @@ import { test } from 'node:test'
 import assert from 'node:assert'
 import * as colors from '../src/colors.js'
 import { Color } from '../src/color.js'
-import { parseColors } from './yaml-parser.js'
+import { parseColors } from '../src/yaml-parser.js'
 
 const removeValues = (
   object: Record<string, unknown>,

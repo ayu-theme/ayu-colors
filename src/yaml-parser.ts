@@ -1,6 +1,6 @@
-import { parse as parseYaml } from 'yaml'
+import { parseDocument, isMap, isScalar, type Document, type Scalar, type Pair } from 'yaml'
 import { readFileSync } from 'node:fs'
-import { Color } from '../src/color.js'
+import { Color } from './color.js'
 
 // Preprocess YAML content to quote hex color values that YAML would misinterpret
 // Values like 555E73 get parsed as scientific notation (5.55e+75)
@@ -9,6 +9,9 @@ function preprocessYaml(content: string): string {
   // This quotes values like: 555E73, 39BAE6, FF0000, etc.
   return content.replace(/: ([0-9A-Fa-f]{6,8})(\s*)$/gm, ': "$1"$2')
 }
+
+// Comments map: path -> comment string
+export type CommentsMap = Map<string, string>
 
 export const PALETTE_STEPS = 5
 
@@ -259,9 +262,54 @@ function processPalette(config: PaletteConfig, result: Record<string, unknown>):
   result.palette = paletteResult
 }
 
+// Extract comments from YAML map node
+function extractCommentsFromMap(
+  map: unknown,
+  comments: CommentsMap,
+  pathPrefix: string[] = []
+): void {
+  if (!isMap(map)) return
+
+  const items = map.items
+  for (let i = 0; i < items.length; i++) {
+    const pair = items[i] as Pair
+    const keyNode = pair.key as Scalar
+    const key = String(keyNode.value)
+    const fullPath = [...pathPrefix, key].join('.')
+
+    // Get comment from the key node (commentBefore is the line(s) above)
+    let comment = keyNode.commentBefore?.trim()
+
+    // For the first item in a map, the comment might be attached to the map itself
+    // (YAML parser attaches comments before first item to the map's commentBefore)
+    if (i === 0 && !comment) {
+      const mapComment = (map as { commentBefore?: string }).commentBefore
+      if (mapComment) {
+        comment = mapComment.trim()
+      }
+    }
+
+    if (comment) {
+      comments.set(fullPath, comment)
+    }
+
+    // Recurse into nested maps
+    if (isMap(pair.value)) {
+      extractCommentsFromMap(pair.value, comments, [...pathPrefix, key])
+    }
+  }
+}
+
+function extractComments(doc: ReturnType<typeof parseDocument>, comments: CommentsMap): void {
+  const contents = doc.contents
+  if (!isMap(contents)) return
+  extractCommentsFromMap(contents, comments)
+}
+
 // Parse YAML content and return Color objects
 export function parseColors<T>(yamlContent: string): T {
-  const data = parseYaml(preprocessYaml(yamlContent)) as Record<string, unknown>
+  const doc = parseDocument(preprocessYaml(yamlContent))
+  const data = doc.toJS() as Record<string, unknown>
   const result: Record<string, unknown> = {}
   const pendingRefs = new Map<string, { target: Record<string, unknown>; key: string; parsed: ParsedRef }>()
 
@@ -286,8 +334,137 @@ export function parseColors<T>(yamlContent: string): T {
   return result as T
 }
 
+// Parse YAML content and return Color objects along with comments
+export function parseColorsWithComments<T>(yamlContent: string): { colors: T; comments: CommentsMap } {
+  const doc = parseDocument(preprocessYaml(yamlContent))
+  const data = doc.toJS() as Record<string, unknown>
+  const result: Record<string, unknown> = {}
+  const pendingRefs = new Map<string, { target: Record<string, unknown>; key: string; parsed: ParsedRef }>()
+  const comments: CommentsMap = new Map()
+
+  // Extract comments from the document
+  extractComments(doc, comments)
+
+  // Extract and process palette section first (so it's available for references)
+  const paletteConfig = extractPaletteConfig(data)
+  if (paletteConfig) {
+    processPalette(paletteConfig, result)
+    delete data.palette // Remove from data so it's not processed again
+  }
+
+  // First pass: process hex values
+  processObject(data, result, pendingRefs)
+
+  // Second pass: resolve references
+  const resolving = new Set<string>()
+  for (const [, { target, key, parsed }] of pendingRefs) {
+    if (!target[key]) {
+      target[key] = resolveRef(parsed, result, resolving, pendingRefs)
+    }
+  }
+
+  return { colors: result as T, comments }
+}
+
 // Load and parse a YAML file
 export function loadColors<T>(filePath: string): T {
   const content = readFileSync(filePath, 'utf-8')
   return parseColors<T>(content)
+}
+
+// Update a value in a YAML document at the given path
+export function updateDocumentValue(doc: Document, path: string[], newValue: string): void {
+  if (!isMap(doc.contents)) return
+
+  let current: unknown = doc.contents
+  for (let i = 0; i < path.length - 1; i++) {
+    if (!isMap(current)) return
+    const items = (current as { items: Pair[] }).items
+    const pair = items.find(p => {
+      const keyNode = p.key as Scalar
+      return String(keyNode.value) === path[i]
+    })
+    if (!pair) return
+    current = pair.value
+  }
+
+  if (!isMap(current)) return
+  const items = (current as { items: Pair[] }).items
+  const lastKey = path[path.length - 1]
+  const pair = items.find(p => {
+    const keyNode = p.key as Scalar
+    return String(keyNode.value) === lastKey
+  })
+
+  if (pair && isScalar(pair.value)) {
+    pair.value.value = newValue
+  }
+}
+
+// Stringify a YAML document (preserves comments)
+export function stringifyDocument(doc: Document): string {
+  return doc.toString({ lineWidth: 0 })
+}
+
+// Parse YAML content and return both the Document (for editing) and JS data
+export function parseYamlDocument(yamlContent: string): { doc: Document; data: Record<string, unknown> } {
+  const doc = parseDocument(preprocessYaml(yamlContent))
+  const data = doc.toJS() as Record<string, unknown>
+  return { doc, data }
+}
+
+// Apply changes from rawData to a YAML document, preserving comments
+export function applyChangesToDocument(
+  doc: Document,
+  rawData: Record<string, unknown>,
+  pathPrefix: string[] = []
+): void {
+  if (!isMap(doc.contents) && pathPrefix.length === 0) return
+
+  const targetMap = pathPrefix.length === 0 ? doc.contents : getMapAtPath(doc, pathPrefix)
+  if (!isMap(targetMap)) return
+
+  applyChangesToMap(targetMap, rawData, pathPrefix)
+}
+
+// Helper: get the map node at a given path
+function getMapAtPath(doc: Document, path: string[]): unknown {
+  let current: unknown = doc.contents
+  for (const key of path) {
+    if (!isMap(current)) return null
+    const items = (current as { items: Pair[] }).items
+    const pair = items.find(p => {
+      const keyNode = p.key as Scalar
+      return String(keyNode.value) === key
+    })
+    if (!pair) return null
+    current = pair.value
+  }
+  return current
+}
+
+// Helper: recursively apply changes to a map
+function applyChangesToMap(
+  map: unknown,
+  data: Record<string, unknown>,
+  pathPrefix: string[]
+): void {
+  if (!isMap(map)) return
+
+  const items = (map as { items: Pair[] }).items
+  for (const pair of items) {
+    const keyNode = pair.key as Scalar
+    const key = String(keyNode.value)
+    const newValue = data[key]
+
+    if (newValue === undefined) continue
+
+    if (typeof newValue === 'object' && newValue !== null && !Array.isArray(newValue)) {
+      // Recurse into nested objects
+      applyChangesToMap(pair.value, newValue as Record<string, unknown>, [...pathPrefix, key])
+    } else if (isScalar(pair.value)) {
+      // Update scalar value
+      pair.value.value = String(newValue)
+    }
+  }
 }

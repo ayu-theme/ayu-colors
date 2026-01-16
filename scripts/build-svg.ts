@@ -189,7 +189,7 @@ function renderPanel(scheme: Scheme, name: string, offsetY: number): string {
   const bg = scheme.editor.bg.hex()
   const uiBg = scheme.ui.bg.hex()
   const uiFg = scheme.ui.fg.hex()
-  const gutterColor = scheme.editor.gutter.normal.hex()
+  const gutterColor = scheme.editor.lineNumber.normal.hex()
   const lineColor = scheme.editor.line.hex()
   const accent = scheme.common.accent.tint.hex()
   const vcsAdded = scheme.vcs.added.hex()
@@ -251,7 +251,7 @@ function renderPanel(scheme: Scheme, name: string, offsetY: number): string {
     }
 
     // Line number
-    const numColor = i === 1 ? scheme.editor.gutter.active.hex() : gutterColor
+    const numColor = i === 1 ? scheme.editor.lineNumber.active.hex() : gutterColor
     svg += `<text x="${
       GUTTER_WIDTH - 8
     }" y="${y}" text-anchor="end" font-family="IosevkaCustom, monospace" font-size="12" fill="${numColor}">${lineNum}</text>`

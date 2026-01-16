@@ -22,7 +22,7 @@ function serializeColors(obj: unknown, ColorClass: unknown): unknown {
 }
 
 export async function GET() {
-  // Dynamic import from absolute path
+  // Dynamic import from absolute path (yaml-parser is compiled to dist/)
   const distPath = join(process.cwd(), 'dist')
   const yamlParserUrl = pathToFileURL(join(distPath, 'yaml-parser.js')).href
   const { parseColors } = await import(/* webpackIgnore: true */ yamlParserUrl)

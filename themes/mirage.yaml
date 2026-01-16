@@ -45,9 +45,14 @@ vcs:
   added: 87D96C
   modified: 80BFFF
   removed: F27983
+surface:
+  sunk: 181C26
+  base: 1F2430
+  lift: "242936"
+  over: FFFFFF
 editor:
   fg: CCCAC2
-  bg: "242936"
+  bg: $surface.lift
   line: 1A1F29
   selection:
     active: 409FFF A0.25
@@ -63,7 +68,7 @@ editor:
     normal: $ui.fg A0.23
 ui:
   fg: 707A8C
-  bg: 1F2430
+  bg: $surface.base
   line: 171B24
   selection:
     active: 637599 A0.15
