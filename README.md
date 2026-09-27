@@ -34,9 +34,9 @@ npm install ayu
 import { dark, light, mirage } from 'ayu'
 
 // Access colors
-dark.syntax.keyword.hex()    // '#FF8F40'
-light.editor.bg.hex()        // '#FCFCFC'
-mirage.common.accent.hex()   // '#FFCC66'
+dark.syntax.keyword.hex()         // '#ff8f40'
+light.editor.bg.hex()             // '#fcfcfc'
+mirage.common.accent.tint.hex()   // '#ffcc66'
 
 // RGB values
 dark.syntax.string.rgb()     // [170, 217, 76]
