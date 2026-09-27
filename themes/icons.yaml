@@ -96,6 +96,7 @@ files:
   bower: file_type_bower@2x.png
   cargo: file_type_cargo.svg
   circleci: file_type_circleci@2x.png
+  claude: file_type_claude.svg
   composer: file_type_composer@2x.png
   docker: file_type_docker@2x.png
   editorconfig: file_type_editorconfig@2x.png
@@ -628,6 +629,9 @@ filenames:
   # CircleCI
   .circleci: circleci
   circle.yml: circleci
+
+  claude.md: claude
+  CLAUDE.md: claude
 
   # Composer
   composer.json: composer
