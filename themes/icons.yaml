@@ -35,6 +35,7 @@ files:
   lsl: file_type_lsl@2x.png
   lua: file_type_lua@2x.png
   matlab: file_type_matlab@2x.png
+  nim: file_type_nim.svg
   nsis: file_type_nsis@2x.png
   ocaml: file_type_ocaml@2x.png
   perl: file_type_perl.svg
@@ -75,6 +76,7 @@ files:
 
   # Templates
   blade: file_type_blade@2x.png
+  ejs: file_type_ejs.svg
   haml: file_type_haml@2x.png
   mustache: file_type_mustache@2x.png
   pug: file_type_pug@2x.png
@@ -138,6 +140,12 @@ files:
   sketch: file_type_sketch.svg
   video: file_type_video@2x.png
 
+  # Infrastructure
+  terraform: file_type_terraform.svg
+
+  # Testing
+  robotframework: file_type_robotframework.svg
+
   # Documents
   excel: file_type_excel@2x.png
   license: file_type_license.svg
@@ -147,6 +155,7 @@ files:
   note: file_type_note@2x.png
   onenote: file_type_onenote@2x.png
   powerpoint: file_type_powerpoint@2x.png
+  bibtex: file_type_bibtex.svg
   tex: file_type_tex@2x.png
   text: file_type_text@2x.png
   textile: file_type_textile@2x.png
@@ -549,6 +558,27 @@ extensions:
   # Tcl
   tcl: tcl
 
+  # BibTeX
+  bib: bibtex
+
+  # EJS
+  ejs: ejs
+
+  # Nim
+  nim: nim
+  nimble: nim
+  nims: nim
+
+  # Robot Framework
+  resource: robotframework
+  robot: robotframework
+
+  # Terraform
+  hcl: terraform
+  tf: terraform
+  tfstate: terraform
+  tfvars: terraform
+
   # TeX
   tex: tex
   texi: tex
@@ -643,6 +673,8 @@ filenames:
   dockerignore: docker
   docker-compose.yml: docker
   docker-compose.yaml: docker
+  compose.yml: docker
+  compose.yaml: docker
 
   # EditorConfig
   .editorconfig: editorconfig
