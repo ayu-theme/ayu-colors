@@ -11,41 +11,41 @@ folder:
 files:
   # Languages
   actionscript: file_type_actionscript@2x.png
-  applescript: file_type_applescript@2x.png
+  applescript: file_type_applescript.svg
   c: file_type_c.svg
   cf: file_type_cf@2x.png
-  clojure: file_type_clojure@2x.png
-  coffeescript: file_type_coffeescript@2x.png
+  clojure: file_type_clojure.svg
+  coffeescript: file_type_coffeescript.svg
   cpp: file_type_cpp.svg
   csharp: file_type_csharp.svg
   dart: file_type_dart.svg
-  dlang: file_type_dlang@2x.png
+  dlang: file_type_dlang.svg
   dotnet: file_type_dotnet@2x.png
-  elm: file_type_elm@2x.png
-  erlang: file_type_erlang@2x.png
-  ex: file_type_ex@2x.png
+  elm: file_type_elm.svg
+  erlang: file_type_erlang.svg
+  ex: file_type_ex.svg
   go: file_type_go.svg
   groovy: file_type_groovy.svg
   haskell: file_type_haskell.svg
   haxe: file_type_haxe.svg
   java: file_type_java.svg
-  julia: file_type_julia@2x.png
+  julia: file_type_julia.svg
   kotlin: file_type_kotlin.svg
-  lisp: file_type_lisp@2x.png
+  lisp: file_type_lisp.svg
   lsl: file_type_lsl@2x.png
-  lua: file_type_lua@2x.png
+  lua: file_type_lua.svg
   matlab: file_type_matlab@2x.png
   nim: file_type_nim.svg
   nsis: file_type_nsis@2x.png
-  ocaml: file_type_ocaml@2x.png
+  ocaml: file_type_ocaml.svg
   perl: file_type_perl.svg
   php: file_type_php.svg
-  powershell: file_type_powershell@2x.png
+  powershell: file_type_powershell.svg
   psm: file_type_psm.svg
-  puppet: file_type_puppet@2x.png
+  puppet: file_type_puppet.svg
   python: file_type_python.svg
   R: file_type_R@2x.png
-  reasonml: file_type_reasonml@2x.png
+  reasonml: file_type_reasonml.svg
   riot: file_type_riot@2x.png
   ruby: file_type_ruby.svg
   rust: file_type_rust.svg
@@ -53,16 +53,16 @@ files:
   shell: file_type_shell.svg
   stata: file_type_stata@2x.png
   swift: file_type_swift.svg
-  tcl: file_type_tcl@2x.png
+  tcl: file_type_tcl.svg
   vim: file_type_vim@2x.png
   wasm: file_type_wasm.svg
 
   # Web
   angular: file_type_angular.svg
   css: file_type_css.svg
-  html: file_type_html@2x.png
+  html: file_type_html.svg
   js: file_type_js.svg
-  jsp: file_type_jsp@2x.png
+  jsp: file_type_jsp.svg
   jsx: file_type_jsx@2x.png
   less: file_type_less@2x.png
   liquid: file_type_liquid.svg
@@ -71,72 +71,76 @@ files:
   scss: file_type_scss.svg
   stylus: file_type_stylus@2x.png
   svelte: file_type_svelte.svg
-  typescript: file_type_typescript.svg
+  typescript:
+    dark: file_type_typescript.svg
+    light: file_type_typescript_light.svg
+  tsx: file_type_tsx.svg
   vue: file_type_vue.svg
 
   # Templates
-  blade: file_type_blade@2x.png
+  blade: file_type_blade.svg
   ejs: file_type_ejs.svg
   haml: file_type_haml@2x.png
   mustache: file_type_mustache@2x.png
   pug: file_type_pug@2x.png
-  slim: file_type_slim@2x.png
-  twig: file_type_twig@2x.png
+  slim: file_type_slim.svg
+  twig: file_type_twig.svg
 
   # Data
   csv: file_type_csv.svg
   gql: file_type_gql.svg
   graphviz: file_type_graphviz.svg
   json: file_type_json.svg
-  plist: file_type_plist@2x.png
+  plist: file_type_plist.svg
   sql: file_type_sql@2x.png
   yaml: file_type_yaml.svg
 
   # Config & Tools
+  agents: file_type_agents.svg
   apache: file_type_apache.png
-  babel: file_type_babel@2x.png
+  babel: file_type_babel.svg
   bower: file_type_bower@2x.png
   cargo: file_type_cargo.svg
-  circleci: file_type_circleci@2x.png
+  circleci: file_type_circleci.svg
   claude: file_type_claude.svg
-  composer: file_type_composer@2x.png
+  composer: file_type_composer.svg
   docker: file_type_docker@2x.png
   editorconfig: file_type_editorconfig@2x.png
-  eslint: file_type_eslint@2x.png
+  eslint: file_type_eslint.svg
   git: file_type_git.svg
-  gradle: file_type_gradle@2x.png
+  gradle: file_type_gradle.svg
   gruntfile: file_type_gruntfile.svg
   gulpfile: file_type_gulpfile@2x.png
   jest: file_type_jest@2x.png
-  nginx: file_type_nginx@2x.png
-  nodejs: file_type_nodejs@2x.png
+  nginx: file_type_nginx.svg
+  nodejs: file_type_nodejs.svg
   npm: file_type_npm.svg
   prettier: file_type_prettier.svg
   procfile: file_type_procfile.svg
   rails: file_type_rails@2x.png
   rollup: file_type_rollup.svg
-  stylelint: file_type_stylelint@2x.png
-  sublime: file_type_sublime@2x.png
+  stylelint: file_type_stylelint.svg
+  sublime: file_type_sublime.svg
   tailwind: file_type_tailwind.svg
   tern: file_type_tern@2x.png
   toml:
     dark: file_type_toml.svg
     light: file_type_toml_light.svg
-  webpack: file_type_webpack@2x.png
+  webpack: file_type_webpack.svg
   yarn: file_type_yarn@2x.png
 
   # Design & Media
-  ae: file_type_ae@2x.png
-  ai: file_type_ai@2x.png
-  audio: file_type_audio@2x.png
+  ae: file_type_ae.svg
+  ai: file_type_ai.svg
+  audio: file_type_audio.svg
   font: file_type_font.svg
   image: file_type_image.svg
-  indesign: file_type_indesign@2x.png
+  indesign: file_type_indesign.svg
   jupyter: file_type_jupyter.svg
-  maya: file_type_maya@2x.png
-  pdf: file_type_pdf@2x.png
-  premiere: file_type_premiere@2x.png
-  psd: file_type_psd@2x.png
+  maya: file_type_maya.svg
+  pdf: file_type_pdf.svg
+  premiere: file_type_premiere.svg
+  psd: file_type_psd.svg
   sketch: file_type_sketch.svg
   video: file_type_video@2x.png
 
@@ -149,28 +153,28 @@ files:
   # Documents
   excel: file_type_excel@2x.png
   license: file_type_license.svg
-  log: file_type_log@2x.png
+  log: file_type_log.svg
   markdown: file_type_markdown.svg
   markup: file_type_markup@2x.png
-  note: file_type_note@2x.png
+  note: file_type_note.svg
   onenote: file_type_onenote@2x.png
   powerpoint: file_type_powerpoint@2x.png
   bibtex: file_type_bibtex.svg
   tex: file_type_tex.svg
-  text: file_type_text@2x.png
+  text: file_type_text.svg
   textile: file_type_textile@2x.png
-  todo: file_type_todo@2x.png
+  todo: file_type_todo.svg
   word: file_type_word@2x.png
 
   # Generic
   accdb: file_type_accdb.png
-  archive: file_type_archive@2x.png
+  archive: file_type_archive.svg
   binary: file_type_binary.svg
   lock: file_type_lock@2x.png
-  preferences: file_type_preferences@2x.png
-  settings: file_type_settings@2x.png
+  preferences: file_type_preferences.svg
+  settings: file_type_settings.svg
   source: file_type_source.svg
-  windows: file_type_windows@2x.png
+  windows: file_type_windows.svg
 
   # Additional languages and tools
   asciidoc: file_type_asciidoc.svg
@@ -225,7 +229,10 @@ files:
     light: file_type_solidity_light.svg
   taskfile: file_type_taskfile.svg
   templ: file_type_templ.svg
-  tsconfig: file_type_tsconfig.svg
+  jsconfig: file_type_jsconfig.svg
+  tsconfig:
+    dark: file_type_tsconfig.svg
+    light: file_type_tsconfig_light.svg
   turbo:
     dark: file_type_turbo.svg
     light: file_type_turbo_light.svg
@@ -256,9 +263,7 @@ files:
   husky:
     dark: file_type_husky.svg
     light: file_type_husky_light.svg
-  jsmap:
-    dark: file_type_jsmap.svg
-    light: file_type_jsmap_light.svg
+  jsmap: file_type_jsmap.svg
   lerna: file_type_lerna.svg
   lintstagedrc: file_type_lintstagedrc.svg
   netlify:
@@ -274,11 +279,13 @@ files:
   robots: file_type_robots.svg
   storybook: file_type_storybook.svg
   swc: file_type_swc.svg
-  testjs:
-    dark: file_type_testjs.svg
-    light: file_type_testjs_light.svg
-  testts: file_type_testts.svg
-  typescriptdef: file_type_typescriptdef.svg
+  testjs: file_type_testjs.svg
+  testts:
+    dark: file_type_testts.svg
+    light: file_type_testts_light.svg
+  typescriptdef:
+    dark: file_type_typescriptdef.svg
+    light: file_type_typescriptdef_light.svg
   vercel:
     dark: file_type_vercel.svg
     light: file_type_vercel_light.svg
@@ -712,7 +719,7 @@ extensions:
   # TypeScript
   mts: typescript
   ts: typescript
-  tsx: typescript
+  tsx: tsx
 
   # Video
   avi: video
@@ -852,6 +859,9 @@ filenames:
   .circleci: circleci
   circle.yml: circleci
 
+  agents.md: agents
+  AGENTS.md: agents
+
   claude.md: claude
   CLAUDE.md: claude
 
@@ -913,6 +923,7 @@ filenames:
   nginx.conf: nginx
 
   # Prettier
+  .prettierignore: prettier
   .prettierrc: prettier
   .prettierrc.js: prettier
   .prettierrc.json: prettier
@@ -1007,7 +1018,7 @@ filenames:
   deno.jsonc: deno
   deno.lock: deno
   tsconfig.json: tsconfig
-  jsconfig.json: tsconfig
+  jsconfig.json: jsconfig
   pyproject.toml: python
   requirements.txt: pip
   go.mod: gomod
